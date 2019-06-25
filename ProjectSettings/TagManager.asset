@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Background
+  - Foreground
+  - UI
+  - cursor
+  - Enemy
+  - Laser
+  - NPC
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background 1
+  - Background 2
+  - Char
+  - Objects
+  - Foreground
+  - Foreground 2
+  - Cursor
+  - NPC
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG1
+    uniqueID: 3907423893
+    locked: 0
+  - name: BG2
+    uniqueID: 3341118805
+    locked: 0
+  - name: BG3
+    uniqueID: 2402509913
+    locked: 0
+  - name: Objects
+    uniqueID: 1804425197
+    locked: 0
+  - name: FG
+    uniqueID: 2435337855
+    locked: 0
+  - name: UI
+    uniqueID: 3718238031
+    locked: 0
+  - name: Cursor
+    uniqueID: 3363172217
+    locked: 0
