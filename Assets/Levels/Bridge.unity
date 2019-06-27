@@ -3775,7 +3775,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &732926817
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732926812}
@@ -3786,7 +3786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: hey
+  storyText: '...'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
