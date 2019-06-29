@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c796fe42c99ba164681a86d18260336a, type: 3}
   m_Name: Prototype
   m_EditorClassIdentifier: 
-  name: Prototype
+  name: Junk
   artwork: {fileID: 21300000, guid: d27b52f56695d9c4081ec905c24e6238, type: 3}
   description: This is used for sth! Yay!
   pickedUp: 0
