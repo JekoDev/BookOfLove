@@ -56,7 +56,7 @@ public class EasyLayer : MonoBehaviour
     }
 
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmos()
     {
         if (wOGizmo == null) wOGizmo = GameObject.Find("World");
     
