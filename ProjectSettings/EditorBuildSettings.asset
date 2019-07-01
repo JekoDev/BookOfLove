@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/_Templates/Scroll.unity
-    guid: 62109da48b7488c42b2237be735fadd9
+    path: Assets/Levels/Graveyard.unity
+    guid: 9945d2c7cdc198c45a2f5ea215eff73e
