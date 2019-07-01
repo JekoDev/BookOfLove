@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c796fe42c99ba164681a86d18260336a, type: 3}
-  m_Name: gzutiuh
+  m_Name: Statue_Head
   m_EditorClassIdentifier: 
-  name: KrassesDing
-  artwork: {fileID: 21300000, guid: 80206b7f97acb8441ac5347475756022, type: 3}
-  description: 
+  name: Statue Head
+  artwork: {fileID: 21300000, guid: fbe0eaee1d3cb7749802719b62fddaf8, type: 3}
+  description: A stare as cold as the stone it's made of.
   pickedUp: 0

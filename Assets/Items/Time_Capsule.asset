@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c796fe42c99ba164681a86d18260336a, type: 3}
-  m_Name: gsdfs
+  m_Name: Time_Capsule
   m_EditorClassIdentifier: 
-  name: fdfdsfs
-  artwork: {fileID: 21300000, guid: 80206b7f97acb8441ac5347475756022, type: 3}
-  description: sfs
+  name: Time Capsule
+  artwork: {fileID: 21300000, guid: 43f47eb0fbbc05948a8c680f708805f7, type: 3}
+  description: 
   pickedUp: 0

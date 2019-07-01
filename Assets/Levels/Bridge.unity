@@ -576,8 +576,7 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 267776512}
-  selectedCommands:
-  - {fileID: 267776511}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -602,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: Picked up "Jen's ring"
+  storyText: Picked up "Prototype" :)
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1390,7 +1389,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 648218101}
-  - {fileID: 1790342462}
   m_Father: {fileID: 2143718045}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3697,6 +3695,32 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1670174780}
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+--- !u!114 &732926814
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732926812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  storyText: I found something else as well.
+  description: 
+  character: {fileID: 1452532229}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &732926815
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3762,9 +3786,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: Please bring me my wife's ring.
+  storyText: '...'
   description: 
-  character: {fileID: 732926819}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3781,6 +3805,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1670174780}
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+--- !u!114 &732926822 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1670174780}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!4 &732926823 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -3863,6 +3893,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 732926816}
   - {fileID: 732926815}
+  - {fileID: 732926814}
 --- !u!1 &771770416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6016,58 +6047,6 @@ Canvas:
   m_SortingLayerID: -576729265
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &1639717693
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 444132344}
-    m_Modifications:
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 25.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114045264620837164, guid: 3082a9e647be27840ba46bdd3dd39a76,
-        type: 2}
-      propertyPath: item
-      value: 
-      objectReference: {fileID: 11400000, guid: 50bbad0528bcc3b42818618d391bb249,
-        type: 2}
-    - target: {fileID: 1457478375556778, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_Name
-      value: prototype
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1670174780
 Prefab:
   m_ObjectHideFlags: 0
@@ -6231,12 +6210,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 732926826}
+      objectReference: {fileID: 732926822}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 732926816}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -6374,117 +6353,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 374687245}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!1 &1790342461 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1457478375556778, guid: 3082a9e647be27840ba46bdd3dd39a76,
-    type: 2}
-  m_PrefabInternal: {fileID: 1639717693}
---- !u!4 &1790342462 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76,
-    type: 2}
-  m_PrefabInternal: {fileID: 1639717693}
---- !u!114 &1790342463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1790342461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39ca72cdbfd6b064c9e999da39ad3299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: 0
---- !u!114 &1790342464
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1790342461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 270
-    y: 226
-    width: 120
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 0
-  blockName: IN
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1790342465}
---- !u!114 &1790342465
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1790342461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 1
-  indentLevel: 0
-  storyText: Picked up "Junk"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1790342466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1790342461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  scrollPos: {x: 0, y: 0}
-  variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
-  blockViewHeight: 396
-  zoom: 1
-  scrollViewRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  selectedBlocks:
-  - {fileID: 1790342464}
-  selectedCommands:
-  - {fileID: 1790342465}
-  variables: []
-  description: 
-  stepPause: 0
-  colorCommands: 1
-  hideComponents: 1
-  saveSelection: 1
-  localizationId: 
-  showLineNumbers: 0
-  hideCommands: []
-  luaEnvironment: {fileID: 0}
-  luaBindingName: flowchart
 --- !u!1 &1808124693
 GameObject:
   m_ObjectHideFlags: 0
@@ -7142,11 +7010,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 22.15
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.3
+      value: 8.19
       objectReference: {fileID: 0}
     - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7171,16 +7039,6 @@ Prefab:
     - target: {fileID: 4209729232282772, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114045264620837164, guid: 3082a9e647be27840ba46bdd3dd39a76,
-        type: 2}
-      propertyPath: item
-      value: 
-      objectReference: {fileID: 11400000, guid: 097d62eb8186c054f95cafc17d778d33,
-        type: 2}
-    - target: {fileID: 1457478375556778, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
-      propertyPath: m_Name
-      value: Ring Jen
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3082a9e647be27840ba46bdd3dd39a76, type: 2}
