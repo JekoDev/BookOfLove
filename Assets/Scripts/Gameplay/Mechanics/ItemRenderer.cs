@@ -17,7 +17,7 @@ public class ItemRenderer : MonoBehaviour {
         player = GameObject.Find("Model");
         _paused = GameObject.Find("Ingame Menu").GetComponent<Pause>();
 
-        if (item.pickedUp == false)
+        if (item != null && item.pickedUp == false)
         {
             _renderer = this.gameObject.AddComponent<SpriteRenderer>();
             _renderer.sprite = item.artwork;
@@ -29,7 +29,7 @@ public class ItemRenderer : MonoBehaviour {
 
     void Update()
     {
-        if (item.pickedUp == true)
+        if (item != null && item.pickedUp == true)
         {
             _paused.Message = false;
             Destroy(this.gameObject);
