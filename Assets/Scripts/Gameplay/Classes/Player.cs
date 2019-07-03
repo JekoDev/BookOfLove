@@ -15,7 +15,7 @@ public class Player : MonoBehaviour {
     public Movement move;
 
     [HideInInspector]
-    public Dictionary<string, string> save;
+    public Dictionary<string, string> save = new Dictionary<string, string>();
 
     private void Start()
     {
@@ -42,7 +42,7 @@ public class Player : MonoBehaviour {
 
     public void SaveValue(string field, string value)
     {
-        save.Add(field, value);
+        save[field] = value;
     }
 
     public string LoadValue(string field)

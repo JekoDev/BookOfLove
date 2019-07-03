@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour {
 
         if (offsetStart != 0)
         {
-            model.transform.position += new Vector3(offsetStart - 7.95f, 0);
+            model.transform.position += new Vector3(offsetStart, 0);
             offsetStart = 0;
         }
 

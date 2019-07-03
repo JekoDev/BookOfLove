@@ -15,7 +15,7 @@ public static class GameM
             return Save;
         }
         set{
-            Save = value;
+            Save = new Dictionary<string, string>(value);
         }
     }
 
