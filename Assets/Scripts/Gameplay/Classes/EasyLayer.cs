@@ -14,6 +14,8 @@ public class EasyLayer : MonoBehaviour
     private Camera camera;
     private float cbr;
 
+    public bool LowerButScrollIndeed = false;
+
     void Start()
     {
         //Move Layer to the correct position
@@ -49,6 +51,14 @@ public class EasyLayer : MonoBehaviour
 
         if (BorderRight > cbr)
         {
+            this.transform.position = worldObject.transform.position;
+            this.transform.position += new Vector3(this.GetComponent<Renderer>().bounds.size.x / 2, -verticalAdjust);
+            this.transform.position -= new Vector3(progress * (BorderRight - cbr), 0f);
+        }
+
+        if (BorderRight < cbr && LowerButScrollIndeed == true)
+        {
+            progress = (camera.transform.position.x - camWidth / 2) / (cbr);
             this.transform.position = worldObject.transform.position;
             this.transform.position += new Vector3(this.GetComponent<Renderer>().bounds.size.x / 2, -verticalAdjust);
             this.transform.position -= new Vector3(progress * (BorderRight - cbr), 0f);

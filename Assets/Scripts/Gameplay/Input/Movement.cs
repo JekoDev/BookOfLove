@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour {
     private Vector3 offset;
     private PostProcessTweak ppt;
     private Pause _paused;
+    public float offsetStart = 0f;
 
 	void Start () {
         inp     = GameObject.Find("Movement").GetComponent<InputManager>();
@@ -26,6 +27,12 @@ public class Movement : MonoBehaviour {
 	
 
 	void Update () {
+
+        if (offsetStart != 0)
+        {
+            model.transform.position += new Vector3(offsetStart - 7.95f, 0);
+            offsetStart = 0;
+        }
 
         //Pause -> Block Input
         if (_paused.Paused == true || _paused.Message == true) return;
@@ -41,7 +48,7 @@ public class Movement : MonoBehaviour {
                 model.transform.localScale = new Vector2(-1, 1);
             }
             model.transform.position += new Vector3(-1, 0) * WalkingSpeed * Time.deltaTime * 50;
-            ppt.bloom(1f);
+            //ppt.bloom(1f);
         }
         else if(inp.Right)
         {
@@ -51,7 +58,7 @@ public class Movement : MonoBehaviour {
                 model.transform.localScale = new Vector2(1, 1);
             }
             model.transform.position += new Vector3(1, 0) * WalkingSpeed * Time.deltaTime * 50;
-            ppt.bloom(1f);
+            //ppt.bloom(1f);
         }
 
         //Character Bounds

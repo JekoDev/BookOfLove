@@ -14,7 +14,8 @@ public class TriggerDialog : MonoBehaviour {
     }
 
     public triggerType trigger;
-    private bool autostart = true;
+    private bool autostart = false;
+    private bool autostarted = false;
 
     private InputManager inp;
     private GameObject player;
@@ -38,6 +39,7 @@ public class TriggerDialog : MonoBehaviour {
         f  = this.GetComponent<Flowchart>();
         pf = player.GetComponent<Flowchart>();
         block = Time.time;
+        if (trigger == triggerType.DIALOG_AUTOSTART) autostart = true;
     }
 
     public void trigger_Dialog(bool type)
@@ -73,50 +75,55 @@ public class TriggerDialog : MonoBehaviour {
     
     public void Update()
     {
-        if (f.IsActive() && f.HasExecutingBlocks())
+        if (autostart == false)
         {
-            if (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 3f)
+            if (f.IsActive() && f.HasExecutingBlocks())
             {
-                f.StopAllBlocks();
-            }
-            check = true;
-            block = Time.time;
-            _paused.Message = true;
-        }else { 
-            if (check == true){
-                check = false;
-                _paused.Message = false;
-                if (f.HasVariable("removeItem") && f.GetBooleanVariable("removeItem") == true)
+                if (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 3f)
                 {
-                    Player cache = player.GetComponent<Player>();
-                    if (f.HasVariable("removeName") && cache.selectedItem.name == f.GetStringVariable("removeName")) { 
-                        cache.RemoveItem(cache.selectedItem);
-                    }
+                    f.StopAllBlocks();
+                }
+                check = true;
+                block = Time.time;
+                _paused.Message = true;
+            }
+            else
+            {
+                if (check == true)
+                {
+                    check = false;
+                    _paused.Message = false;
                 }
             }
-        }
 
 
-        if (autostart == true && trigger == triggerType.DIALOG_AUTOSTART) {
-            autostart = false;
-            trigger_Dialog(false);
-        }
 
-        if (Time.time - block > 0.8f && check==false) {
-            if (triggered == true && (inp.PointRight) && Vector3.Distance(player.transform.position, this.gameObject.transform.position) < 3f)
+            if (Time.time - block > 0.8f && check == false)
             {
-                if (this.GetComponent<ItemRenderer>() == null) { 
-                    trigger_Dialog(true);
-                }else{
+                if (triggered == true && (inp.PointRight) && Vector3.Distance(player.transform.position, this.gameObject.transform.position) < 3f)
+                {
+                    if (this.GetComponent<ItemRenderer>() == null)
+                    {
+                        trigger_Dialog(true);
+                    }
+                    else
+                    {
+                        trigger_Dialog(false);
+                    }
+
+                }
+
+                if (triggered == true && (inp.PointLeft || inp.Action) && Vector3.Distance(player.transform.position, this.gameObject.transform.position) < 3f)
+                {
                     trigger_Dialog(false);
                 }
-
             }
+        }
 
-            if (triggered == true && (inp.PointLeft || inp.Action) && Vector3.Distance(player.transform.position, this.gameObject.transform.position) < 3f)
-            {
-                trigger_Dialog(false);
-            }
+        if (autostart == true && trigger == triggerType.DIALOG_AUTOSTART && autostarted == false)
+        {
+            autostarted = false;
+            trigger_Dialog(false);
         }
     }
 

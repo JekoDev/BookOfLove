@@ -520,8 +520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abc5d9d61b719e47bcf5e08a18c1780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BorderRight: 48.89
+  BorderRight: 9.6
   verticalAdjust: 0
+  LowerButScrollIndeed: 1
 --- !u!1 &368161865
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,10 +645,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraBorderLeft: 0
-  CameraBorderRight: 49.03
+  CameraBorderRight: 57.12
   HelperGroundLine: -4.06
   DrawCameraHelper: 1
-  CameraHelper: 0
+  CameraHelper: 24.1
 --- !u!114 &395705372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,6 +1143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BorderRight: 132.7
   verticalAdjust: 0
+  LowerButScrollIndeed: 0
 --- !u!1 &602257905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,7 +1363,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 685954859}
   selectedCommands:
-  - {fileID: 685954868}
+  - {fileID: 685954867}
   variables: []
   description: 
   stepPause: 0
@@ -1399,8 +1401,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 685954860}
   - {fileID: 685954863}
-  - {fileID: 685954867}
   - {fileID: 685954868}
+  - {fileID: 685954867}
 --- !u!114 &685954860
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1560,7 +1562,7 @@ MonoBehaviour:
   - {fileID: 685954865}
 --- !u!114 &685954867
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685954853}
@@ -1570,49 +1572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 6
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 1452532224}
-  targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-    PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: Player
-  targetMethod: AddItem
-  targetMethodText: 'AddItem (Item): Void'
-  methodParameters:
-  - objValue:
-      typeAssemblyname: Item, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      typeFullname: Item
-      intValue: 0
-      boolValue: 0
-      floatValue: 0
-      stringValue: 
-      colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 0}
-      materialValue: {fileID: 0}
-      objectValue: {fileID: 11400000, guid: 50bbad0528bcc3b42818618d391bb249, type: 2}
-      spriteValue: {fileID: 0}
-      textureValue: {fileID: 0}
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
-    variableKey: 
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &685954868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685954853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 7
   indentLevel: 0
   description: 
   targetObject: {fileID: 1452532224}
@@ -1646,12 +1605,55 @@ MonoBehaviour:
       typeFullname: System.Single
       intValue: 0
       boolValue: 0
-      floatValue: 0
+      floatValue: 24.1
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
       objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &685954868
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 685954853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 1452532224}
+  targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Player
+  targetMethod: AddItem
+  targetMethodText: 'AddItem (Item): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: Item, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      typeFullname: Item
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 11400000, guid: d6ad5152d88051f419cae2dac9194301, type: 2}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -2447,6 +2449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkingSpeed: 0.1
+  offsetStart: 0
 --- !u!1 &987549652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,6 +2812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BorderRight: 58.47
   verticalAdjust: 0
+  LowerButScrollIndeed: 0
 --- !u!1 &1077497199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,6 +2979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BorderRight: 61.85
   verticalAdjust: -4.18
+  LowerButScrollIndeed: 0
 --- !u!212 &1126915150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4131,6 +4136,7 @@ MonoBehaviour:
   selectedItem: {fileID: 0}
   itemlist: []
   lf: {fileID: 0}
+  move: {fileID: 0}
 --- !u!1 &1566592031
 GameObject:
   m_ObjectHideFlags: 0
@@ -8139,7 +8145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 685954858}
+  selectedFlowchart: {fileID: 2093800018}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
