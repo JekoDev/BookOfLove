@@ -6,5 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Levels/Main Menu.unity
+    guid: 4413638943f2b5e49aa0e4ca9e82c842
+  - enabled: 1
+    path: Assets/Levels/Bridge Prologue.unity
+    guid: cf4a58cb27d30e74fb238ebab49854ba
+  - enabled: 1
+    path: Assets/Levels/Bridge.unity
+    guid: badbbcef95b74054cb18cdd72b751e15
+  - enabled: 1
     path: Assets/Levels/Graveyard.unity
     guid: 9945d2c7cdc198c45a2f5ea215eff73e
+  - enabled: 1
+    path: Assets/Levels/Museum.unity
+    guid: 44030273f9c51ab4b8696f992db6fbc1
+  - enabled: 1
+    path: Assets/Levels/Hospital.unity
+    guid: ea74e99bfab91ea4db33c663455e025e
