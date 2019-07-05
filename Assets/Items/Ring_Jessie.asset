@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c796fe42c99ba164681a86d18260336a, type: 3}
-  m_Name: Photo_Jessie
+  m_Name: Ring_Jessie
   m_EditorClassIdentifier: 
-  name: Photo of Jessie
-  artwork: {fileID: 21300000, guid: e5da8b7ca8869534d90664c6f1b3560d, type: 3}
+  name: Ring_Jessie
+  artwork: {fileID: 21300000, guid: f53cf27d176f4964d83f9ab4e0ab78d5, type: 3}
   description: 
   pickedUp: 0
