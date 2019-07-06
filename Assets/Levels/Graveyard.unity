@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 20714897}
   - component: {fileID: 20714880}
   m_Layer: 15
-  m_Name: Grave 6
+  m_Name: Grave 6 (Wife)
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -687,7 +687,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &20714880
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -883,7 +883,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 20714898}
+  - {fileID: 20714886}
   selectedCommands: []
   variables:
   - {fileID: 20714902}
@@ -1139,7 +1139,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &20714897
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -1154,7 +1154,7 @@ MonoBehaviour:
   commentText: Potential secret flashback
 --- !u!114 &20714898
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -1171,7 +1171,7 @@ MonoBehaviour:
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
-  itemId: 13
+  itemId: 19
   blockName: Ring_Jen
   description: 
   eventHandler: {fileID: 0}
@@ -1180,7 +1180,7 @@ MonoBehaviour:
   - {fileID: 20714880}
 --- !u!114 &20714899
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -1206,7 +1206,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &20714900
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   commentText: Potential secret flashback
 --- !u!114 &20714901
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -1247,7 +1247,7 @@ MonoBehaviour:
   - {fileID: 20714899}
 --- !u!114 &20714902
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   value: 
 --- !u!114 &20714903
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 20714877}
@@ -11070,7 +11070,7 @@ GameObject:
   - component: {fileID: 1673731732}
   - component: {fileID: 1673731731}
   m_Layer: 15
-  m_Name: Grave 3
+  m_Name: Grave 3 (Teacher)
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
