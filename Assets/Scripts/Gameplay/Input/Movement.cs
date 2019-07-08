@@ -15,6 +15,15 @@ public class Movement : MonoBehaviour {
     private Pause _paused;
     public float offsetStart = 0f;
 
+    [HideInInspector]
+    public bool blockMove = false;
+
+    [HideInInspector]
+    public float moveTo;
+
+    [HideInInspector]
+    public bool MoveDir;
+
 	void Start () {
         inp     = GameObject.Find("Movement").GetComponent<InputManager>();
         model   = GameObject.Find("Model");
@@ -34,10 +43,46 @@ public class Movement : MonoBehaviour {
             offsetStart = 0;
         }
 
-        //Pause -> Block Input
-        if (_paused.Paused == true || _paused.Message == true) return;
+        if (blockMove == true)
+        {
+            if (MoveDir == false) {
+                model.transform.position += new Vector3(1, 0) * WalkingSpeed * Time.deltaTime * 50;
+                if (LeftDirection)
+                {
+                    LeftDirection = false;
+                    model.transform.localScale = new Vector2(1, 1);
+                }
+                if (model.transform.position.x >= moveTo){
+                    blockMove = false;
+                }
+            }
+            else
+            {
+                model.transform.position += new Vector3(-1, 0) * WalkingSpeed * Time.deltaTime * 50;
+                if (!LeftDirection)
+                {
+                    LeftDirection = true;
+                    model.transform.localScale = new Vector2(-1, 1);
+                }
+                if (model.transform.position.x <= moveTo){
+                    blockMove = false;
+                }
+            }
+        }
 
-        ppt.bloom(0.5f);
+        //Camera Bounds
+        float screenAspect = (float)Screen.width / (float)Screen.height;
+        float camHalfHeight = camera.orthographicSize;
+        float camHalfWidth = screenAspect * camHalfHeight;
+        float camWidth = 2.0f * camHalfWidth;
+
+        camera.transform.position = model.transform.position + offset;
+        if (camera.transform.position.x <= world.CameraBorderLeft + camHalfWidth) camera.transform.position = new Vector3(world.CameraBorderLeft + camHalfWidth, camera.transform.position.y, camera.transform.position.z);
+        if (camera.transform.position.x > world.CameraBorderRight - camHalfWidth) camera.transform.position = new Vector3(world.CameraBorderRight - camHalfWidth, camera.transform.position.y, camera.transform.position.z);
+
+
+        //Pause -> Block Input
+        if (_paused.Paused == true || _paused.Message == true || blockMove == true) return;
 
         //Character Movement
         if (inp.Left)
@@ -62,25 +107,22 @@ public class Movement : MonoBehaviour {
         }
 
         //Character Bounds
-        if (model.transform.position.x < world.CameraBorderLeft + model.GetComponent<SpriteRenderer>().bounds.size.x)
+        if (model.transform.position.x < world.CameraBorderLeft )
         {
-            model.transform.position = new Vector3(world.CameraBorderLeft + model.GetComponent<SpriteRenderer>().bounds.size.x, model.transform.position.y, model.transform.position.z);
+            model.transform.position = new Vector3(world.CameraBorderLeft, model.transform.position.y, model.transform.position.z);
         }
 
-        if (model.transform.position.x > world.CameraBorderRight - model.GetComponent<SpriteRenderer>().bounds.size.x)
+        if (model.transform.position.x > world.CameraBorderRight)
         {
-            model.transform.position = new Vector3(world.CameraBorderRight - model.GetComponent<SpriteRenderer>().bounds.size.x, model.transform.position.y, model.transform.position.z);
+            model.transform.position = new Vector3(world.CameraBorderRight, model.transform.position.y, model.transform.position.z);
         }
 
 
-        //Camera Bounds
-        float screenAspect = (float)Screen.width / (float)Screen.height;
-        float camHalfHeight = camera.orthographicSize;
-        float camHalfWidth = screenAspect * camHalfHeight;
-        float camWidth = 2.0f * camHalfWidth;
+        if(world.CharacterBounds == true)
+        {
+            if (model.transform.position.x <= world.CharacterBoundLeft + camHalfWidth) model.transform.position = new Vector3(world.CharacterBoundLeft + camHalfWidth, model.transform.position.y, model.transform.position.z);
+            if (model.transform.position.x > world.CharacterBoundRight - camHalfWidth) model.transform.position = new Vector3(world.CharacterBoundRight - camHalfWidth, model.transform.position.y, model.transform.position.z);
+        }
 
-        camera.transform.position = model.transform.position + offset;
-        if (camera.transform.position.x <= world.CameraBorderLeft + camHalfWidth)  camera.transform.position = new Vector3(world.CameraBorderLeft + camHalfWidth,  camera.transform.position.y, camera.transform.position.z);
-        if (camera.transform.position.x > world.CameraBorderRight - camHalfWidth) camera.transform.position  = new Vector3(world.CameraBorderRight - camHalfWidth, camera.transform.position.y, camera.transform.position.z);
     }
 }

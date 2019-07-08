@@ -18,6 +18,7 @@ public class TriggerDialog : MonoBehaviour {
     private bool autostarted = false;
 
     private InputManager inp;
+    private Movement mov;
     private GameObject player;
     private Pause _paused;
     private Flowchart f;
@@ -29,10 +30,14 @@ public class TriggerDialog : MonoBehaviour {
     private bool triggered;
     private bool check = false;
 
+    private bool moveToMe;
+    private bool moveItem;
+
 
     public void Start()
     {
         inp = GameObject.Find("Movement").GetComponent<InputManager>();
+        mov = GameObject.Find("Character").GetComponent<Movement>();
         player = GameObject.Find("Model");
         _paused = GameObject.Find("Ingame Menu").GetComponent<Pause>();
         iMenu = GameObject.Find("ItemMenu").GetComponent<ItemMenu>();
@@ -118,11 +123,36 @@ public class TriggerDialog : MonoBehaviour {
                     trigger_Dialog(false);
                 }
             }
+
+
+            if (mov.blockMove == false && autostart == false && (inp.PointLeft || inp.Action || inp.PointRight) && triggered == true && Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 2.9f){
+                mov.blockMove = true;
+                moveToMe = true;
+                moveItem = (inp.PointRight) ? true : false;
+
+                if (player.transform.position.x > this.gameObject.transform.position.x)
+                {
+                    mov.moveTo = this.gameObject.transform.position.x + 1.2f;
+                    mov.MoveDir = true;
+                }
+                else
+                {
+                    mov.moveTo = this.gameObject.transform.position.x - 1.2f;
+                    mov.MoveDir = false;
+                }
+            }
+
+            if (moveToMe == true && Vector3.Distance(player.transform.position, this.gameObject.transform.position) <= 1.4f)
+            {
+                trigger_Dialog(moveItem);
+                moveToMe = false;
+            }
+
         }
 
         if (autostart == true && trigger == triggerType.DIALOG_AUTOSTART && autostarted == false)
         {
-            autostarted = false;
+            autostarted = true;
             trigger_Dialog(false);
         }
     }

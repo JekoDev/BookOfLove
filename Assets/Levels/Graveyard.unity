@@ -4092,6 +4092,9 @@ MonoBehaviour:
   HelperGroundLine: -4.15
   DrawCameraHelper: 1
   CameraHelper: 0
+  CharacterBounds: 1
+  CharacterBoundLeft: -1.27
+  CharacterBoundRight: 59.55
 --- !u!114 &395705372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7337,6 +7340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WalkingSpeed: 0.1
   offsetStart: 0
+  blockMove: 0
+  moveTo: 0
+  MoveDir: 0
 --- !u!1 &987549652
 GameObject:
   m_ObjectHideFlags: 0

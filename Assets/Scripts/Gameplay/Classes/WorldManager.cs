@@ -14,6 +14,10 @@ public class WorldManager : MonoBehaviour {
     public float CameraHelper = 0f;
     private Camera camera;
 
+    public bool CharacterBounds = false;
+    public float CharacterBoundLeft = 0f;
+    public float CharacterBoundRight = 0f;
+
     void OnDrawGizmos()
     {
         camera = Camera.main;
@@ -28,8 +32,11 @@ public class WorldManager : MonoBehaviour {
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(new Vector3(CameraBorderLeft, HelperGroundLine + this.transform.position.y), new Vector3(CameraBorderRight, HelperGroundLine + this.transform.position.y));
 
-
-
+        if (CharacterBounds == true) { 
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(new Vector3(CharacterBoundLeft + 6f, 50), new Vector3(CharacterBoundLeft + 6f, -150));
+            Gizmos.DrawLine(new Vector3(CharacterBoundRight - 9f, 50), new Vector3(CharacterBoundRight - 9f, -150));
+        }
     }
 
     void Start()
