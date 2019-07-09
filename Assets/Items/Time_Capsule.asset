@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c796fe42c99ba164681a86d18260336a, type: 3}
   m_Name: Time_Capsule
   m_EditorClassIdentifier: 
-  name: Time Capsule
-  artwork: {fileID: 21300000, guid: 43f47eb0fbbc05948a8c680f708805f7, type: 3}
+  name: Time_Capsule
+  artwork: {fileID: 21300000, guid: 3894560836a9b8f4f8c1f1045959a4ef, type: 3}
   description: 
   pickedUp: 0

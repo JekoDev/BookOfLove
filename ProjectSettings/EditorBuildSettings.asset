@@ -23,3 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Hospital.unity
     guid: ea74e99bfab91ea4db33c663455e025e
+  - enabled: 1
+    path: Assets/Levels/Epilogue.unity
+    guid: c73125a20c84033478b858c8b53b23b8

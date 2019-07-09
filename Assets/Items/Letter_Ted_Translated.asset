@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c796fe42c99ba164681a86d18260336a, type: 3}
   m_Name: Letter_Ted_Translated
   m_EditorClassIdentifier: 
-  name: Letter from Ted
+  name: Letter_Ted_Translated
   artwork: {fileID: 21300000, guid: 0ff36a10155559f49bf190c939356c04, type: 3}
   description: 
   pickedUp: 0
