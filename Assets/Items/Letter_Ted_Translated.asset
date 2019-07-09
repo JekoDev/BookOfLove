@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c796fe42c99ba164681a86d18260336a, type: 3}
+  m_Name: Letter_Ted_Translated
+  m_EditorClassIdentifier: 
+  name: Letter from Ted
+  artwork: {fileID: 21300000, guid: 0ff36a10155559f49bf190c939356c04, type: 3}
+  description: 
+  pickedUp: 0

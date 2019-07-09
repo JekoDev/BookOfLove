@@ -380,12 +380,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2023222270}
+      objectReference: {fileID: 2023222271}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2023222268}
+      objectReference: {fileID: 2023222293}
     - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: nameText
@@ -1194,6 +1194,9 @@ MonoBehaviour:
   HelperGroundLine: -4.2
   DrawCameraHelper: 1
   CameraHelper: 0
+  CharacterBounds: 0
+  CharacterBoundLeft: 0
+  CharacterBoundRight: 0
 --- !u!114 &395705372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3303,6 +3306,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WalkingSpeed: 0.1
   offsetStart: 0
+  blockMove: 0
+  moveTo: 0
+  MoveDir: 0
 --- !u!1 &987549652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4453,6 +4459,18 @@ GameObject:
   - component: {fileID: 1452532236}
   - component: {fileID: 1452532235}
   - component: {fileID: 1452532234}
+  - component: {fileID: 1452532248}
+  - component: {fileID: 1452532247}
+  - component: {fileID: 1452532246}
+  - component: {fileID: 1452532245}
+  - component: {fileID: 1452532244}
+  - component: {fileID: 1452532243}
+  - component: {fileID: 1452532237}
+  - component: {fileID: 1452532242}
+  - component: {fileID: 1452532241}
+  - component: {fileID: 1452532240}
+  - component: {fileID: 1452532239}
+  - component: {fileID: 1452532238}
   m_Layer: 10
   m_Name: Model
   m_TagString: Untagged
@@ -4604,9 +4622,8 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1452532231}
-  selectedCommands:
-  - {fileID: 1452532234}
+  - {fileID: 1452532237}
+  selectedCommands: []
   variables: []
   description: "This is just for common Dialogues \n(Wrong Item default answer etc.)"
   stepPause: 0
@@ -4694,7 +4711,7 @@ MonoBehaviour:
   commandList: []
 --- !u!114 &1452532234
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1452532224}
@@ -4759,6 +4776,214 @@ MonoBehaviour:
   itemlist: []
   lf: {fileID: 0}
   move: {fileID: 0}
+--- !u!114 &1452532237
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -20.757172
+    y: 266.39868
+    width: 139.8734
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 6
+  blockName: ExitFlashback
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1452532242}
+  - {fileID: 1452532241}
+  - {fileID: 1452532240}
+  - {fileID: 1452532239}
+  - {fileID: 1452532238}
+--- !u!114 &1452532238
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  commenterName: 
+  commentText: wait until everything is complete
+--- !u!114 &1452532239
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  commenterName: 
+  commentText: Fade out visual effects
+--- !u!114 &1452532240
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  commenterName: 
+  commentText: Fade in level music
+--- !u!114 &1452532241
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  commenterName: 
+  commentText: Fade away flashback music
+--- !u!114 &1452532242
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  commenterName: 
+  commentText: Play sound effect
+--- !u!114 &1452532243
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  commenterName: 
+  commentText: wait until everything is complete
+--- !u!114 &1452532244
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  commenterName: 
+  commentText: Fade in visual effects
+--- !u!114 &1452532245
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  commenterName: 
+  commentText: Fade in flashback music
+--- !u!114 &1452532246
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  commenterName: 
+  commentText: Fade away level music
+--- !u!114 &1452532247
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  commenterName: 
+  commentText: Play sound effect
+--- !u!114 &1452532248
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1452532224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -26.83313
+    y: 187.9178
+    width: 148.73416
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 6
+  blockName: EnterFlashback
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1452532247}
+  - {fileID: 1452532246}
+  - {fileID: 1452532245}
+  - {fileID: 1452532244}
+  - {fileID: 1452532243}
 --- !u!1 &1566592031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5579,7 +5804,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 213.86293
     y: 359.8885
-    width: 130.68181
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5618,6 +5843,8 @@ MonoBehaviour:
   - {fileID: 2023222296}
   - {fileID: 2023222295}
   - {fileID: 2023222294}
+  - {fileID: 2023222320}
+  - {fileID: 2023222319}
   - {fileID: 2023222293}
   - {fileID: 2023222292}
 --- !u!114 &2023222272
@@ -5779,7 +6006,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2023222276
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -5805,7 +6032,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2023222277
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -5831,7 +6058,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2023222278
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -5857,7 +6084,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2023222279
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -5883,7 +6110,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2023222280
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -5914,7 +6141,7 @@ Transform:
   m_PrefabInternal: {fileID: 102360108}
 --- !u!114 &2023222282
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -5975,7 +6202,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2023222283
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -5990,7 +6217,7 @@ MonoBehaviour:
   commentText: First time talking to him
 --- !u!114 &2023222284
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6005,7 +6232,7 @@ MonoBehaviour:
   commentText: Delivered both parts
 --- !u!114 &2023222285
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6020,7 +6247,7 @@ MonoBehaviour:
   commentText: Delivered one part
 --- !u!114 &2023222286
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6035,7 +6262,7 @@ MonoBehaviour:
   commentText: Talked at least once to Ben
 --- !u!114 &2023222287
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6065,7 +6292,7 @@ MonoBehaviour:
     gameObjectVal: {fileID: 0}
 --- !u!114 &2023222288
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6095,7 +6322,7 @@ MonoBehaviour:
     gameObjectVal: {fileID: 0}
 --- !u!114 &2023222289
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6125,7 +6352,7 @@ MonoBehaviour:
     gameObjectVal: {fileID: 0}
 --- !u!114 &2023222290
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6155,7 +6382,7 @@ MonoBehaviour:
     gameObjectVal: {fileID: 0}
 --- !u!114 &2023222291
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6199,7 +6426,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2023222292
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6260,7 +6487,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2023222293
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -6992,6 +7219,46 @@ MonoBehaviour:
   returnValueType: System.String
   showInherited: 0
   callMode: 0
+--- !u!114 &2023222319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2023222266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 63
+  indentLevel: 0
+  targetFlowchart: {fileID: 1452532230}
+  targetBlock: {fileID: 1452532237}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 2
+--- !u!114 &2023222320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2023222266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 62
+  indentLevel: 0
+  targetFlowchart: {fileID: 1452532230}
+  targetBlock: {fileID: 1452532248}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 2
 --- !u!1 &2030600884
 GameObject:
   m_ObjectHideFlags: 0
