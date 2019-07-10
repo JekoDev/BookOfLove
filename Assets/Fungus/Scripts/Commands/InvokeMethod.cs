@@ -83,6 +83,7 @@ namespace Fungus
 
             if (objComponent == null)
             {
+                if (targetObject == null) targetObject = GameObject.Find("Model");
                 objComponent = targetObject.GetComponent(componentType);
             }
 

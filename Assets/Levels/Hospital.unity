@@ -666,7 +666,7 @@ Prefab:
         type: 2}
       propertyPath: character
       value: 
-      objectReference: {fileID: 1452532229}
+      objectReference: {fileID: 0}
     - target: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: storyText
@@ -939,8 +939,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 522501643}
-  - {fileID: 983127297}
   - {fileID: 732309195}
+  - {fileID: 1754428625}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -975,6 +975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prof: {fileID: 11400000, guid: 2408cee4f37a0d849856b4c3a718f872, type: 2}
+  bloomTo: 0
 --- !u!1 &396375951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,68 +1133,6 @@ Transform:
   m_Father: {fileID: 2143718045}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &453075646
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 983127297}
-    m_Modifications:
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114802561495383290, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: _audioSource.audioSourceVal
-      value: 
-      objectReference: {fileID: 978933324}
-    - target: {fileID: 114432739421466690, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: _audioSource.audioSourceVal
-      value: 
-      objectReference: {fileID: 1468594706}
-    - target: {fileID: 114750936686432798, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: _audioSource.audioSourceVal
-      value: 
-      objectReference: {fileID: 978933324}
-    - target: {fileID: 114732437659161778, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: _audioSource.audioSourceVal
-      value: 
-      objectReference: {fileID: 1468594706}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &453132001
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,6 +1532,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 1
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &533533626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1732,7 +1677,7 @@ MonoBehaviour:
   itemId: 29
   indentLevel: 0
   description: Load LetterActive
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1928,7 +1873,7 @@ MonoBehaviour:
   itemId: 80
   indentLevel: 0
   description: Load EthanActive
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2059,7 +2004,7 @@ MonoBehaviour:
   itemId: 76
   indentLevel: 0
   description: Load PickedUpBandages in tmp
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2529,7 +2474,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: ahh
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2559,8 +2504,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  targetFlowchart: {fileID: 1452532230}
-  targetBlock: {fileID: 1452532242}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -2605,8 +2550,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  targetFlowchart: {fileID: 1452532230}
-  targetBlock: {fileID: 1452532248}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -2835,7 +2780,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   description: 
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3109,7 +3054,7 @@ Transform:
   - {fileID: 45766042}
   - {fileID: 430456258}
   m_Father: {fileID: 395705370}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &732309196
 SpriteRenderer:
@@ -3742,7 +3687,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: I hope whereever he is, he's doing better now.
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3768,7 +3713,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: He vanished, just like Shaun.
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3807,7 +3752,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: This bed belongs to "Ethan Schwartz."
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3876,7 +3821,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 0
   description: Load SavedEthan into tmp
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4117,7 +4062,7 @@ Prefab:
         type: 2}
       propertyPath: character
       value: 
-      objectReference: {fileID: 1452532229}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[1]
@@ -4322,7 +4267,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: I can use these to fix Ben's toy!
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4361,7 +4306,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: I don't think I need these right now.
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4426,7 +4371,7 @@ MonoBehaviour:
   itemId: 54
   indentLevel: 1
   description: PickedUpBandages = true
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4487,7 +4432,7 @@ MonoBehaviour:
   itemId: 49
   indentLevel: 1
   description: Get Bandages
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4530,7 +4475,7 @@ MonoBehaviour:
   itemId: 48
   indentLevel: 0
   description: Load BenState into tmp
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4574,7 +4519,7 @@ MonoBehaviour:
   itemId: 52
   indentLevel: 0
   description: Load BenState into tmp
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4810,7 +4755,7 @@ Prefab:
         type: 2}
       propertyPath: character
       value: 
-      objectReference: {fileID: 1452532229}
+      objectReference: {fileID: 0}
     - target: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: storyText
@@ -5149,52 +5094,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &983127296
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 983127297}
-  - component: {fileID: 983127298}
-  m_Layer: 10
-  m_Name: Character
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &983127297
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983127296}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.55, y: -0.23, z: 0}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1}
-  m_Children:
-  - {fileID: 1452532225}
-  m_Father: {fileID: 395705370}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &983127298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983127296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbdb31d609b71614680010cc47a8ffd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkingSpeed: 0.1
-  offsetStart: 0
-  blockMove: 0
-  moveTo: 0
-  MoveDir: 0
 --- !u!1 &987549652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5636,7 +5535,7 @@ Prefab:
         type: 2}
       propertyPath: character
       value: 
-      objectReference: {fileID: 1452532229}
+      objectReference: {fileID: 0}
     - target: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: storyText
@@ -6722,40 +6621,6 @@ Transform:
   m_Father: {fileID: 977866480}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1452532224 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1412527430192192, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 453075646}
---- !u!4 &1452532225 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 453075646}
---- !u!114 &1452532229 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114890678015326076, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 453075646}
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
---- !u!114 &1452532230 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114350637277066064, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 453075646}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
---- !u!114 &1452532242 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114720172745998356, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 453075646}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &1452532248 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114055880754157354, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 453075646}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!1 &1468594705
 GameObject:
   m_ObjectHideFlags: 0
@@ -7080,7 +6945,7 @@ Prefab:
         type: 2}
       propertyPath: character
       value: 
-      objectReference: {fileID: 1452532229}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[1]
@@ -7342,7 +7207,7 @@ MonoBehaviour:
   itemId: 52
   indentLevel: 0
   description: LetterActive = false
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7403,7 +7268,7 @@ MonoBehaviour:
   itemId: 59
   indentLevel: 0
   description: Get Letter_Ted
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7448,7 +7313,7 @@ MonoBehaviour:
   storyText: I need to find out what this letter says, maybe it'll help me find out
     what happened.
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7474,7 +7339,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: It looks like it was signed by "Teddie." That name feels familiar...
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7500,7 +7365,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Goddammit, why is my name appearing everywhere??
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7526,7 +7391,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: It certainly fits better than Ethan
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7553,7 +7418,7 @@ MonoBehaviour:
   storyText: I can't read the language, but it says "Ellie" at the top? Is that supposed
     to be me?
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7579,7 +7444,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Wait a second...
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7668,6 +7533,53 @@ Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
     type: 2}
   m_PrefabInternal: {fileID: 120936558}
+--- !u!1001 &1754428624
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 395705370}
+    m_Modifications:
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1754428625 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754428624}
 --- !u!1001 &1789883568
 Prefab:
   m_ObjectHideFlags: 0
@@ -8533,7 +8445,7 @@ MonoBehaviour:
   itemId: 26
   indentLevel: 0
   description: EthanSaved = true
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8609,7 +8521,7 @@ MonoBehaviour:
   itemId: 24
   indentLevel: 0
   description: Remove Capsule
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8659,7 +8571,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Here it is.
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -8741,7 +8653,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: Still looking for it.
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -8792,7 +8704,7 @@ MonoBehaviour:
   itemId: 15
   indentLevel: 1
   description: EthanState = 1
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8927,7 +8839,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   description: Load EthanState into tmp
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8971,7 +8883,7 @@ MonoBehaviour:
   itemId: 11
   indentLevel: 1
   description: Get Key
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -9144,7 +9056,7 @@ Prefab:
         type: 2}
       propertyPath: character
       value: 
-      objectReference: {fileID: 1452532229}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[1]
@@ -9409,7 +9321,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: This bed belongs to "Jen Price."
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -9464,7 +9376,7 @@ MonoBehaviour:
   itemId: 16
   indentLevel: 0
   description: Load SavedShaun into tmp
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -9549,7 +9461,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: I am reacting!
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -9604,7 +9516,7 @@ MonoBehaviour:
   itemId: 11
   indentLevel: 0
   description: Load SawHospitalFlashback into tmp
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -9648,7 +9560,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 1
   description: ShaunState = 2
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -9761,7 +9673,7 @@ MonoBehaviour:
   itemId: 70
   indentLevel: 1
   description: SawHospitalFlashback = true
-  targetObject: {fileID: 1452532224}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -9856,7 +9768,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: This bed belongs to "Jessie Oakley."
   description: 
-  character: {fileID: 1452532229}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -9893,8 +9805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 69
   indentLevel: 0
-  targetFlowchart: {fileID: 1452532230}
-  targetBlock: {fileID: 1452532242}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -9913,8 +9825,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 68
   indentLevel: 0
-  targetFlowchart: {fileID: 1452532230}
-  targetBlock: {fileID: 1452532248}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 

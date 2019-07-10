@@ -17,6 +17,8 @@ public class Player : MonoBehaviour {
     [HideInInspector]
     public Dictionary<string, string> save = new Dictionary<string, string>();
 
+    private PostProcessTweak ppt;
+
     private void Start()
     {
         lf = GameObject.Find("LevelFade").GetComponent<LevelFade>();
@@ -26,6 +28,7 @@ public class Player : MonoBehaviour {
         itemlist = new List<Item>(GameM.itemlist);
         selectedItem = GameM.selected;
         save = new Dictionary<string, string>(GameM.save);
+        ppt = GameObject.Find("World").GetComponent<PostProcessTweak>();
     }
 
     // Update is called once per frame
@@ -88,5 +91,10 @@ public class Player : MonoBehaviour {
         GameM.save = save;
 
         lf.FadeLevel(id);
+    }
+
+    public void SetBloom(float bloom)
+    {
+        ppt.bloomTo = bloom;
     }
 }

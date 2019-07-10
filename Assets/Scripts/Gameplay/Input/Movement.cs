@@ -11,7 +11,6 @@ public class Movement : MonoBehaviour {
     private WorldManager world;
     private Camera camera;
     private Vector3 offset;
-    private PostProcessTweak ppt;
     private Pause _paused;
     public float offsetStart = 0f;
 
@@ -24,14 +23,24 @@ public class Movement : MonoBehaviour {
     [HideInInspector]
     public bool MoveDir;
 
+    [HideInInspector]
+    public bool TurnDir;
+
+    [HideInInspector]
+    public bool OwnWalk = false;
+
+    private Animator ElliotAnim;
+    private SpriteRenderer ElliotSprite;
+         
 	void Start () {
         inp     = GameObject.Find("Movement").GetComponent<InputManager>();
         model   = GameObject.Find("Model");
         world   = GameObject.Find("World").GetComponent<WorldManager>();
-        ppt     = GameObject.Find("World").GetComponent<PostProcessTweak>();
         _paused = GameObject.Find("Ingame Menu").GetComponent<Pause>();
         camera  = Camera.main;
         offset  = camera.transform.position - model.transform.position;
+        ElliotAnim = model.GetComponent<Animator>();
+        ElliotSprite = model.GetComponent<SpriteRenderer>();
     }
 	
 
@@ -43,29 +52,59 @@ public class Movement : MonoBehaviour {
             offsetStart = 0;
         }
 
+        ElliotAnim.SetBool("Walking", false);
         if (blockMove == true)
         {
-            if (MoveDir == false) {
-                model.transform.position += new Vector3(1, 0) * WalkingSpeed * Time.deltaTime * 50;
+            if (MoveDir == false)
+            {
                 if (LeftDirection)
                 {
                     LeftDirection = false;
-                    model.transform.localScale = new Vector2(1, 1);
+                    ElliotSprite.flipX = false;
                 }
-                if (model.transform.position.x >= moveTo){
+                if (Vector3.Distance(model.transform.position, new Vector3(moveTo, model.transform.position.y)) < 0.2f)
+                {
                     blockMove = false;
+                    if (OwnWalk == true)
+                    {
+                        if (!LeftDirection && TurnDir == false)
+                        {
+                            LeftDirection = true;
+                            ElliotSprite.flipX = true;
+                        }
+                    }
+                    OwnWalk = false;
+                }
+                else
+                {
+                    ElliotAnim.SetBool("Walking", true);
+                    model.transform.position += new Vector3(1, 0) * WalkingSpeed * Time.deltaTime * 50;
                 }
             }
             else
             {
-                model.transform.position += new Vector3(-1, 0) * WalkingSpeed * Time.deltaTime * 50;
                 if (!LeftDirection)
                 {
                     LeftDirection = true;
-                    model.transform.localScale = new Vector2(-1, 1);
+                    ElliotSprite.flipX = true;
                 }
-                if (model.transform.position.x <= moveTo){
+                if (Vector3.Distance(model.transform.position, new Vector3(moveTo, model.transform.position.y)) < 0.2f)
+                {
                     blockMove = false;
+                    if (OwnWalk == true)
+                    {
+                        if (LeftDirection && TurnDir == true)
+                        {
+                            LeftDirection = false;
+                            ElliotSprite.flipX = false;
+                        }
+                    }
+                    OwnWalk = false;
+                }
+                else
+                {
+                    ElliotAnim.SetBool("Walking", true);
+                    model.transform.position += new Vector3(-1, 0) * WalkingSpeed * Time.deltaTime * 50;
                 }
             }
         }
@@ -90,20 +129,20 @@ public class Movement : MonoBehaviour {
             if (!LeftDirection)
             {
                 LeftDirection = true;
-                model.transform.localScale = new Vector2(-1, 1);
+                ElliotSprite.flipX = true;
             }
             model.transform.position += new Vector3(-1, 0) * WalkingSpeed * Time.deltaTime * 50;
-            //ppt.bloom(1f);
+            ElliotAnim.SetBool("Walking", true);
         }
         else if(inp.Right)
         {
             if (LeftDirection)
             {
                 LeftDirection = false;
-                model.transform.localScale = new Vector2(1, 1);
+                ElliotSprite.flipX = false;
             }
+            ElliotAnim.SetBool("Walking", true);
             model.transform.position += new Vector3(1, 0) * WalkingSpeed * Time.deltaTime * 50;
-            //ppt.bloom(1f);
         }
 
         //Character Bounds

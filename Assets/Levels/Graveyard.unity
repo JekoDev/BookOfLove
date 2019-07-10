@@ -283,6 +283,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &14221498
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -802,74 +808,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1001 &183562176
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 983127297}
-    m_Modifications:
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412527430192192, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_Name
-      value: Model
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &183562177 stripped
 GameObject:
-  m_PrefabParentObject: {fileID: 1412527430192192, guid: a03f895a0604b5e449527771e39ca681,
+  m_PrefabParentObject: {fileID: 1263245183040418, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
     type: 2}
-  m_PrefabInternal: {fileID: 183562176}
+  m_PrefabInternal: {fileID: 1093821556}
 --- !u!114 &183562178 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114720172745998356, guid: a03f895a0604b5e449527771e39ca681,
+  m_PrefabParentObject: {fileID: 114875146833686784, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
     type: 2}
-  m_PrefabInternal: {fileID: 183562176}
+  m_PrefabInternal: {fileID: 1093821556}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &183562179 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114055880754157354, guid: a03f895a0604b5e449527771e39ca681,
+  m_PrefabParentObject: {fileID: 114137589466432852, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
     type: 2}
-  m_PrefabInternal: {fileID: 183562176}
+  m_PrefabInternal: {fileID: 1093821556}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &183562180 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114350637277066064, guid: a03f895a0604b5e449527771e39ca681,
+  m_PrefabParentObject: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
     type: 2}
-  m_PrefabInternal: {fileID: 183562176}
+  m_PrefabInternal: {fileID: 1093821556}
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &193375054
 GameObject:
@@ -1041,6 +1001,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &193375062
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1354,6 +1320,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &212087981
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1417,7 +1389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 162, y: -71}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
@@ -1647,6 +1619,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: -1.11
+  LookRightIfNotLeft: 0
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &320619667
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -2197,6 +2175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prof: {fileID: 11400000, guid: 2408cee4f37a0d849856b4c3a718f872, type: 2}
+  bloomTo: 0
 --- !u!1 &396375951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,11 +2427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 2408cee4f37a0d849856b4c3a718f872, type: 2}
---- !u!4 &456770367 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 183562176}
 --- !u!1 &522501642
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,6 +2769,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 1
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &533533626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4368,6 +4348,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &587307643
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5328,6 +5314,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &640342619
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6366,6 +6358,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &938100252
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6568,52 +6566,11 @@ Transform:
   m_Father: {fileID: 260725660}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &983127296
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 983127297}
-  - component: {fileID: 983127298}
-  m_Layer: 10
-  m_Name: Character
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &983127297
+--- !u!4 &983127297 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983127296}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.55, y: 0.79, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
-  m_Children:
-  - {fileID: 456770367}
-  m_Father: {fileID: 395705370}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &983127298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983127296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbdb31d609b71614680010cc47a8ffd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkingSpeed: 0.1
-  offsetStart: 0
-  blockMove: 0
-  moveTo: 0
-  MoveDir: 0
+  m_PrefabParentObject: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1093821556}
 --- !u!1 &987549652
 GameObject:
   m_ObjectHideFlags: 0
@@ -7044,6 +7001,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1044055875
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7433,6 +7396,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1093821556
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 395705370}
+    m_Modifications:
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1121786107
 GameObject:
   m_ObjectHideFlags: 0
@@ -7795,6 +7800,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1177173119
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -8517,6 +8528,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1416104892
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9078,6 +9095,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1451365078
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9631,6 +9654,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1527251923
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10231,6 +10260,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1737446693
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11026,6 +11061,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1861243585
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11266,7 +11307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 212087983}
+  selectedFlowchart: {fileID: 183562180}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -11792,6 +11833,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1892750387
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12178,6 +12225,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 21300000, guid: 1dc32774ac4fd5744baa346affdeaf5d, type: 3}
+  HoverSpriteScale: 0.4
+  HoverOffsetY: 5.06
+  HoverOffsetX: 0
 --- !u!114 &1979233083
 MonoBehaviour:
   m_ObjectHideFlags: 2

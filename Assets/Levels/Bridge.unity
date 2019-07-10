@@ -113,6 +113,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &5768239
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 395705370}
+    m_Modifications:
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &5768240 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 5768239}
 --- !u!4 &29798303 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -760,6 +807,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!1001 &297569733
 Prefab:
   m_ObjectHideFlags: 0
@@ -1051,7 +1104,7 @@ MonoBehaviour:
   itemId: 15
   indentLevel: 0
   description: 
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1138,7 +1191,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: 
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1878,8 +1931,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 522501643}
-  - {fileID: 983127297}
   - {fileID: 732309195}
+  - {fileID: 5768240}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1914,6 +1967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prof: {fileID: 11400000, guid: 2408cee4f37a0d849856b4c3a718f872, type: 2}
+  bloomTo: 0
 --- !u!1 &396375951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,12 +3028,6 @@ Prefab:
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &459432148 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 459432147}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &522501642
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,7 +3101,7 @@ MonoBehaviour:
   itemId: 5
   indentLevel: 0
   description: 
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3429,7 +3477,7 @@ MonoBehaviour:
   itemId: 5
   indentLevel: 0
   description: Load graveyard
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3789,7 +3837,7 @@ MonoBehaviour:
   itemId: 50
   indentLevel: 0
   description: Load StatueHealth
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3832,8 +3880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 66
   indentLevel: 0
-  targetFlowchart: {fileID: 2074767439}
-  targetBlock: {fileID: 2074767435}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3887,8 +3935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 68
   indentLevel: 0
-  targetFlowchart: {fileID: 2074767439}
-  targetBlock: {fileID: 2074767438}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3934,7 +3982,7 @@ MonoBehaviour:
   itemId: 65
   indentLevel: 0
   description: Increase StatueHealth
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3995,7 +4043,7 @@ MonoBehaviour:
   itemId: 86
   indentLevel: 0
   description: ExitOpen = true
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4055,8 +4103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  targetFlowchart: {fileID: 2074767439}
-  targetBlock: {fileID: 2074767438}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4101,8 +4149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  targetFlowchart: {fileID: 2074767439}
-  targetBlock: {fileID: 2074767435}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4152,7 +4200,7 @@ MonoBehaviour:
   itemId: 82
   indentLevel: 0
   description: Increase StatueHealth
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4213,7 +4261,7 @@ MonoBehaviour:
   itemId: 81
   indentLevel: 0
   description: BenActive = true
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4273,8 +4321,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 0
-  targetFlowchart: {fileID: 2074767439}
-  targetBlock: {fileID: 2074767438}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4319,8 +4367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 0
-  targetFlowchart: {fileID: 2074767439}
-  targetBlock: {fileID: 2074767435}
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 0}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4340,7 +4388,7 @@ MonoBehaviour:
   itemId: 77
   indentLevel: 0
   description: Increase StatueHealth
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4401,7 +4449,7 @@ MonoBehaviour:
   itemId: 76
   indentLevel: 0
   description: EthanActive = true
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4488,7 +4536,7 @@ MonoBehaviour:
   itemId: 90
   indentLevel: 0
   description: Remove Rings
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4531,7 +4579,7 @@ MonoBehaviour:
   itemId: 89
   indentLevel: 0
   description: Remove Letter
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4574,7 +4622,7 @@ MonoBehaviour:
   itemId: 88
   indentLevel: 0
   description: Remove Rings
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5419,7 +5467,7 @@ MonoBehaviour:
   itemId: 94
   indentLevel: 0
   description: Save Reaction into InscriptionReaction
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5803,7 +5851,7 @@ MonoBehaviour:
   itemId: 80
   indentLevel: 0
   description: Load InscriptionReaction into Reaction
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5862,7 +5910,7 @@ MonoBehaviour:
   itemId: 78
   indentLevel: 0
   description: Save StatueVerse
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6592,7 +6640,7 @@ MonoBehaviour:
   itemId: 52
   indentLevel: 0
   description: Load StatueVerse
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6675,7 +6723,7 @@ MonoBehaviour:
   itemId: 101
   indentLevel: 1
   description: Save Reaction into InscriptionReaction
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6736,7 +6784,7 @@ MonoBehaviour:
   itemId: 100
   indentLevel: 1
   description: Save StatueVerse
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7042,7 +7090,7 @@ Transform:
   - {fileID: 45766042}
   - {fileID: 430456258}
   m_Father: {fileID: 395705370}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &732309196
 SpriteRenderer:
@@ -7312,7 +7360,7 @@ MonoBehaviour:
   itemId: 43
   indentLevel: 0
   description: RingsActive = true
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7379,7 +7427,7 @@ MonoBehaviour:
   itemId: 42
   indentLevel: 0
   description: SavedShaun = true
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7612,7 +7660,7 @@ MonoBehaviour:
   itemId: 38
   indentLevel: 0
   description: Remove Ring
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7655,7 +7703,7 @@ MonoBehaviour:
   itemId: 37
   indentLevel: 0
   description: Remove Letter
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8030,7 +8078,7 @@ MonoBehaviour:
   itemId: 23
   indentLevel: 1
   description: Give Photo_Jen
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8200,7 +8248,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 0
   description: Save ShaunState
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8378,7 +8426,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   description: Load ShaunState
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8478,7 +8526,7 @@ MonoBehaviour:
   itemId: 40
   indentLevel: 0
   description: Remove Photo
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8955,7 +9003,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   description: 
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -9036,52 +9084,6 @@ Transform:
   m_Father: {fileID: 260725660}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &983127296
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 983127297}
-  - component: {fileID: 983127298}
-  m_Layer: 10
-  m_Name: Character
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &983127297
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983127296}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.55, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2074767437}
-  m_Father: {fileID: 395705370}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &983127298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 983127296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbdb31d609b71614680010cc47a8ffd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkingSpeed: 0.1
-  offsetStart: 0
-  blockMove: 0
-  moveTo: 0
-  MoveDir: 0
 --- !u!1 &987549652
 GameObject:
   m_ObjectHideFlags: 0
@@ -9609,6 +9611,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 1
+  WalkToPoint: 0
+  LookRightIfNotLeft: 1
+  HoverSprite: {fileID: 0}
+  HoverSpriteScale: 1
+  HoverOffsetY: 0
+  HoverOffsetX: 0
 --- !u!114 &1123748881
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -9909,7 +9917,7 @@ MonoBehaviour:
   itemId: 73
   indentLevel: 0
   description: 
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -10040,7 +10048,7 @@ MonoBehaviour:
   itemId: 77
   indentLevel: 0
   description: Load SavedShaun
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -10881,7 +10889,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: Can't go here.
   description: 
-  character: {fileID: 2074767440}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -10963,7 +10971,7 @@ MonoBehaviour:
   itemId: 7
   indentLevel: 0
   description: 
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -11007,7 +11015,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 1
   description: 
-  targetObject: {fileID: 2074767434}
+  targetObject: {fileID: 0}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -12394,7 +12402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 459432148}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -12677,117 +12685,6 @@ MonoBehaviour:
   StickDown: 0
   StickRight: 0
   StickLeft: 0
---- !u!1001 &2074767433
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 983127297}
-    m_Modifications:
-    - target: {fileID: 114350637277066064, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: selectedCommands.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412527430192192, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-      propertyPath: m_Name
-      value: Model
-      objectReference: {fileID: 0}
-    - target: {fileID: 114350637277066064, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: selectedBlocks.Array.data[0]
-      value: 
-      objectReference: {fileID: 2074767435}
-    - target: {fileID: 114350637277066064, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: selectedCommands.Array.data[0]
-      value: 
-      objectReference: {fileID: 2074767436}
-    - target: {fileID: 114750936686432798, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: _audioSource.audioSourceVal
-      value: 
-      objectReference: {fileID: 1720863555}
-    - target: {fileID: 114732437659161778, guid: a03f895a0604b5e449527771e39ca681,
-        type: 2}
-      propertyPath: _audioSource.audioSourceVal
-      value: 
-      objectReference: {fileID: 102820556}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a03f895a0604b5e449527771e39ca681, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &2074767434 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1412527430192192, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074767433}
---- !u!114 &2074767435 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114055880754157354, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074767433}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &2074767436 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114750936686432798, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074767433}
-  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
---- !u!4 &2074767437 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4438390094563622, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074767433}
---- !u!114 &2074767438 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114720172745998356, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074767433}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &2074767439 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114350637277066064, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074767433}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
---- !u!114 &2074767440 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114890678015326076, guid: a03f895a0604b5e449527771e39ca681,
-    type: 2}
-  m_PrefabInternal: {fileID: 2074767433}
-  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &2082583805 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a,

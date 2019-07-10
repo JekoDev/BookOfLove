@@ -24,7 +24,7 @@ public class TriggerDialog : MonoBehaviour {
     private Flowchart f;
     private Flowchart pf;
     private Item sel;
-    private float block;
+    private static float block;
     private ItemMenu iMenu;
 
     private bool triggered;
@@ -33,6 +33,17 @@ public class TriggerDialog : MonoBehaviour {
     private bool moveToMe;
     private bool moveItem;
 
+    private bool LeMeSetAWalkToPoint = true;
+    public float WalkToPoint = 0f;
+    public bool LookRightIfNotLeft = true;
+
+    public Sprite HoverSprite;
+    private bool Hovered;
+    private SpriteRenderer ThisSRenderer;
+    public float HoverSpriteScale = 1f;
+    public float HoverOffsetY = 0f;
+    public float HoverOffsetX = 0f;
+    private GameObject CacheElement;
 
     public void Start()
     {
@@ -44,11 +55,15 @@ public class TriggerDialog : MonoBehaviour {
         f  = this.GetComponent<Flowchart>();
         pf = player.GetComponent<Flowchart>();
         block = Time.time;
+        ThisSRenderer = this.GetComponent<SpriteRenderer>();
         if (trigger == triggerType.DIALOG_AUTOSTART) autostart = true;
     }
 
     public void trigger_Dialog(bool type)
     {
+        _paused.Message = true;
+        check = true;
+        block = Time.time;
         iMenu.collapse = false;
         if (type == true) {
             sel = player.GetComponent<Player>().selectedItem;
@@ -80,72 +95,75 @@ public class TriggerDialog : MonoBehaviour {
     
     public void Update()
     {
+        if (triggered == true)
+        {
+            if (Hovered == false && HoverSprite != null)
+            {
+                GameObject CacheElement = new GameObject();
+                CacheElement.transform.parent = this.transform;
+                CacheElement.name = "HoverElement";
+                CacheElement.AddComponent<SpriteRenderer>();
+                SpriteRenderer HoverS = CacheElement.GetComponent<SpriteRenderer>();
+                HoverS.sortingLayerName = ThisSRenderer.sortingLayerName;
+                HoverS.sortingOrder = ThisSRenderer.sortingOrder + 100;
+                HoverS.sprite = HoverSprite;
+                HoverS.transform.position = new Vector3(this.transform.position.x + HoverOffsetX, this.transform.position.y + HoverOffsetY);
+                HoverS.transform.localScale = new Vector3(HoverSpriteScale, HoverSpriteScale);
+                Hovered = true;
+            }
+        }
+        else
+        {
+            if (Hovered == true)
+            {
+                Destroy(GameObject.Find("HoverElement"));
+                Hovered = false;
+            }
+        }
+
+
+        if (check == true && f.GetExecutingBlocks().Count != 0) block = Time.time;
+
+        if (Time.time - block > 0.5 && check == true)
+        {
+            check = false;
+            _paused.Message = false;
+        }
+
+
         if (autostart == false)
         {
-            if (f.IsActive() && f.HasExecutingBlocks())
-            {
-                if (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 3f)
-                {
-                    f.StopAllBlocks();
-                }
-                check = true;
-                block = Time.time;
-                _paused.Message = true;
-            }
-            else
-            {
-                if (check == true)
-                {
-                    check = false;
-                    _paused.Message = false;
-                }
-            }
 
+            if (Time.time - block < 0.5) return;
 
-
-            if (Time.time - block > 0.8f && check == false)
-            {
-                if (triggered == true && (inp.PointRight) && Vector3.Distance(player.transform.position, this.gameObject.transform.position) < 3f)
-                {
-                    if (this.GetComponent<ItemRenderer>() == null)
-                    {
-                        trigger_Dialog(true);
-                    }
-                    else
-                    {
-                        trigger_Dialog(false);
-                    }
-
-                }
-
-                if (triggered == true && (inp.PointLeft || inp.Action) && Vector3.Distance(player.transform.position, this.gameObject.transform.position) < 3f)
-                {
-                    trigger_Dialog(false);
-                }
-            }
-
-
-            if (mov.blockMove == false && autostart == false && (inp.PointLeft || inp.Action || inp.PointRight) && triggered == true && Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 2.9f){
+            if (mov.blockMove == false && autostart == false && (inp.PointLeft || inp.Action || inp.PointRight) && triggered == true && (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 2.0f || LeMeSetAWalkToPoint == true)){
                 mov.blockMove = true;
                 moveToMe = true;
                 moveItem = (inp.PointRight) ? true : false;
 
-                if (player.transform.position.x > this.gameObject.transform.position.x)
+                if (player.transform.position.x > this.transform.position.x + WalkToPoint)
                 {
-                    mov.moveTo = this.gameObject.transform.position.x + 1.2f;
                     mov.MoveDir = true;
+                    mov.OwnWalk = LeMeSetAWalkToPoint;
+                    mov.TurnDir = LookRightIfNotLeft;
+                    mov.moveTo = this.gameObject.transform.position.x + WalkToPoint;
                 }
                 else
                 {
-                    mov.moveTo = this.gameObject.transform.position.x - 1.2f;
                     mov.MoveDir = false;
-                }
+                    mov.OwnWalk = LeMeSetAWalkToPoint;
+                    mov.TurnDir = LookRightIfNotLeft;
+                    mov.moveTo = this.gameObject.transform.position.x + WalkToPoint;
+                }  
+            
             }
 
-            if (moveToMe == true && Vector3.Distance(player.transform.position, this.gameObject.transform.position) <= 1.4f)
+            if (moveToMe == true && mov.blockMove == false)
             {
-                trigger_Dialog(moveItem);
-                moveToMe = false;
+                if (LeMeSetAWalkToPoint == false || mov.OwnWalk == false) { 
+                    trigger_Dialog(moveItem);
+                    moveToMe = false;
+                }
             }
 
         }
@@ -171,6 +189,20 @@ public class TriggerDialog : MonoBehaviour {
         if (collision.gameObject.name == "cursor" && trigger == triggerType.DIALOG_CLICKME)
         {
             triggered = false;
+        }
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        if (LeMeSetAWalkToPoint == true) { 
+            Gizmos.DrawWireSphere(new Vector3(this.transform.position.x + WalkToPoint, this.transform.position.y), 1f);
+        }
+
+        if(HoverSprite != null)
+        {
+            Vector3 cache = new Vector3(this.transform.position.x + HoverOffsetX, this.transform.position.y + HoverOffsetY);
+            Gizmos.DrawWireCube(cache, new Vector3(HoverSprite.bounds.size.x * HoverSpriteScale, HoverSprite.bounds.size.y * HoverSpriteScale));
         }
     }
 
