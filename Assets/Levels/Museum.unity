@@ -5791,6 +5791,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -1.96
       objectReference: {fileID: 0}
+    - target: {fileID: 114326920795114900, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: soundEffect
+      value: 
+      objectReference: {fileID: 8300000, guid: d29d2f8ce6350754cb3d8b4e988f2002, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
   m_IsPrefabParent: 0
@@ -6867,7 +6872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2023222325}
+  selectedFlowchart: {fileID: 686724317}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -7236,7 +7241,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 213.86293
     y: 357.71457
-    width: 120
+    width: 124.418526
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8745,12 +8750,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 102360108}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &2023222325 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 102360108}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!114 &2023222329
 MonoBehaviour:
   m_ObjectHideFlags: 2
