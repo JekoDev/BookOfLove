@@ -95,7 +95,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1263245183040418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.71, y: -1.45, z: 0}
+  m_LocalPosition: {x: -2.71, y: -0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4386673245673620}
@@ -208,7 +208,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 126.32765
     y: 330.19617
-    width: 148.73416
+    width: 131.24997
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   itemId: 30
   indentLevel: 0
   commenterName: 
-  commentText: Fade in flashback music
+  commentText: Fade in level music
 --- !u!114 &114326920795114900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: I can't use this item here...
+  storyText: Can't use this here.
   description: 
   character: {fileID: 114326920795114900}
   portrait: {fileID: 0}
@@ -373,11 +373,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 42.026737, y: 100.18347}
+  scrollPos: {x: -169.73592, y: 134.6702}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
-  zoom: 0.7900002
+  zoom: 0.6400003
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -385,8 +385,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 114875146833686784}
-  selectedCommands: []
+  - {fileID: 114524474724057806}
+  selectedCommands:
+  - {fileID: 114754362380341288}
   variables: []
   description: "This is just for common Dialogues \n(Wrong Item default answer etc.)"
   stepPause: 0
@@ -468,7 +469,7 @@ MonoBehaviour:
   itemId: 25
   indentLevel: 0
   commenterName: 
-  commentText: Fade away level music
+  commentText: Fade away flashback music
 --- !u!114 &114524474724057806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -571,7 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: That's not gonna work...
+  storyText: I'm not carrying anything that I can use.
   description: 
   character: {fileID: 114326920795114900}
   portrait: {fileID: 0}
@@ -678,7 +679,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 131.13777
     y: 408.67694
-    width: 139.8734
+    width: 123.43747
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

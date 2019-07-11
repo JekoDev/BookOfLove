@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -2.56
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -831,6 +831,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1093821556}
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+--- !u!114 &183562194 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114417864887088304, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1093821556}
+  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
 --- !u!1 &193375054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,7 +1007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -1.73
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -1619,7 +1625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: -1.11
+  WalkToPoint: -2.48
   LookRightIfNotLeft: 0
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -2161,8 +2167,8 @@ MonoBehaviour:
   DrawCameraHelper: 1
   CameraHelper: 0
   CharacterBounds: 1
-  CharacterBoundLeft: -1.27
-  CharacterBoundRight: 59.55
+  CharacterBoundLeft: -1.13
+  CharacterBoundRight: 56.6
 --- !u!114 &395705372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2535,8 +2541,7 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 533533621}
-  selectedCommands:
-  - {fileID: 533533641}
+  selectedCommands: []
   variables:
   - {fileID: 533533634}
   - {fileID: 533533648}
@@ -3213,7 +3218,7 @@ MonoBehaviour:
   commentText: Use sprite with S+J and box
 --- !u!114 &533533641
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533533616}
@@ -3446,7 +3451,7 @@ MonoBehaviour:
   commentText: Elliot's reaction to graveyard
 --- !u!114 &533533651
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533533616}
@@ -3459,7 +3464,7 @@ MonoBehaviour:
   indentLevel: 1
 --- !u!114 &533533652
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533533616}
@@ -3472,7 +3477,7 @@ MonoBehaviour:
   indentLevel: 1
 --- !u!114 &533533653
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533533616}
@@ -4348,7 +4353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -2.38
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -5056,7 +5061,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 312.21875
     y: 395.53012
-    width: 122.13111
+    width: 134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5314,7 +5319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -1.91
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -5362,11 +5367,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -11.557228, y: 215.80153}
+  scrollPos: {x: 677.3123, y: 807.27826}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 304
-  zoom: 0.6100003
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -5375,8 +5380,7 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 640342608}
-  selectedCommands:
-  - {fileID: 640342607}
+  selectedCommands: []
   variables:
   - {fileID: 640342613}
   description: 
@@ -7001,7 +7005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -1.56
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -7403,6 +7407,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 395705370}
     m_Modifications:
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 11.55
@@ -7434,6 +7443,40 @@ Prefab:
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 183562178}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 183562194}
+    - target: {fileID: 114335713508829316, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 17137217}
+    - target: {fileID: 114417864887088304, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 387836350}
+    - target: {fileID: 114839809926689040, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 387836350}
+    - target: {fileID: 114881518696217790, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 17137217}
+    - target: {fileID: 4819416715357298, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.49
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
@@ -9394,7 +9437,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1510223000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1510222997}
@@ -9654,7 +9697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -2.48
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -10260,7 +10303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -2.29
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -11307,7 +11350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 183562180}
+  selectedFlowchart: {fileID: 533533617}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -11833,7 +11876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -1.94
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 0}
   HoverSpriteScale: 1
@@ -12225,7 +12268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: 0
-  WalkToPoint: 0
+  WalkToPoint: -2.3
   LookRightIfNotLeft: 1
   HoverSprite: {fileID: 21300000, guid: 1dc32774ac4fd5744baa346affdeaf5d, type: 3}
   HoverSpriteScale: 0.4
@@ -12969,7 +13012,7 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
-      objectReference: {fileID: 1510222999}
+      objectReference: {fileID: 1510223000}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -12993,7 +13036,17 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 1510223000}
+      objectReference: {fileID: 1510222999}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 1.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: LookRightIfNotLeft
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}

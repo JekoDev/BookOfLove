@@ -218,6 +218,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
+--- !u!1 &75899701 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1263245183040418, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754428624}
+--- !u!114 &75899706 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114881518696217790, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754428624}
+  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
+--- !u!114 &75899723 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114137589466432852, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754428624}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &75899730 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1754428624}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1001 &120936558
 Prefab:
   m_ObjectHideFlags: 0
@@ -429,6 +452,11 @@ Prefab:
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -2.33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -960,9 +988,9 @@ MonoBehaviour:
   HelperGroundLine: -3.76
   DrawCameraHelper: 1
   CameraHelper: 0
-  CharacterBounds: 0
-  CharacterBoundLeft: 0
-  CharacterBoundRight: 0
+  CharacterBounds: 1
+  CharacterBoundLeft: -4.35
+  CharacterBoundRight: 46.45
 --- !u!114 &395705372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1331,7 +1359,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 533533621}
   selectedCommands:
-  - {fileID: 533533639}
+  - {fileID: 533533638}
   variables:
   - {fileID: 533533630}
   description: 
@@ -1677,7 +1705,7 @@ MonoBehaviour:
   itemId: 29
   indentLevel: 0
   description: Load LetterActive
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 75899701}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1873,7 +1901,7 @@ MonoBehaviour:
   itemId: 80
   indentLevel: 0
   description: Load EthanActive
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 75899701}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2004,7 +2032,7 @@ MonoBehaviour:
   itemId: 76
   indentLevel: 0
   description: Load PickedUpBandages in tmp
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 75899701}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2377,6 +2405,11 @@ Prefab:
       propertyPath: commandList.Array.data[4]
       value: 
       objectReference: {fileID: 595321019}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
@@ -2756,6 +2789,16 @@ Prefab:
       propertyPath: commandList.Array.data[1]
       value: 
       objectReference: {fileID: 681080462}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 2.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: LookRightIfNotLeft
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114173515735133182, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -2829,7 +2872,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &681080462
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 681080460}
@@ -3589,6 +3632,16 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].y
       value: 3.4505658
       objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 2.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: LookRightIfNotLeft
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -4208,6 +4261,11 @@ Prefab:
       propertyPath: commandList.Array.data[11]
       value: 
       objectReference: {fileID: 882393021}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -0.81
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -4359,7 +4417,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &882393024
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 882393017}
@@ -4557,7 +4615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
 --- !u!114 &882393029
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 882393017}
@@ -5745,16 +5803,15 @@ Prefab:
       propertyPath: selectedBlocks.Array.data[0]
       value: 
       objectReference: {fileID: 2021390960}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -2.01
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1027971464 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1027971463}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!4 &1046950703 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -7115,6 +7172,11 @@ Prefab:
       propertyPath: commandList.Array.data[10]
       value: 
       objectReference: {fileID: 1638361248}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -1.25
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -7151,7 +7213,7 @@ MonoBehaviour:
   value: 
 --- !u!114 &1638361248
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1638361246}
@@ -7540,6 +7602,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 395705370}
     m_Modifications:
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 11.55
@@ -7571,6 +7638,48 @@ Prefab:
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 75899723}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 75899706}
+    - target: {fileID: 114839809926689040, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 1468594706}
+    - target: {fileID: 114881518696217790, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 978933324}
+    - target: {fileID: 114335713508829316, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 978933324}
+    - target: {fileID: 114417864887088304, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 1468594706}
+    - target: {fileID: 4819416715357298, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819416715357298, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4819416715357298, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
@@ -7791,6 +7900,11 @@ Prefab:
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].y
       value: 3.4505658
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -2.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -8160,7 +8274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1027971464}
+  selectedFlowchart: {fileID: 75899730}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -8389,7 +8503,7 @@ MonoBehaviour:
   commentText: Player has to have been here before Ethan appeared
 --- !u!114 &2021390953
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2021390948}
@@ -8623,7 +8737,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 413.86307
     y: 322.3884
-    width: 131.81812
+    width: 139.7727
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9282,6 +9396,16 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].y
       value: 3.4505658
       objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 1.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: LookRightIfNotLeft
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -9661,7 +9785,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2067218899
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067218886}
@@ -9794,7 +9918,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &2067218903
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067218886}
@@ -9814,7 +9938,7 @@ MonoBehaviour:
   callMode: 2
 --- !u!114 &2067218904
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067218886}

@@ -380,12 +380,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2023222273}
+      objectReference: {fileID: 2023222324}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2023222332}
+      objectReference: {fileID: 2023222321}
     - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: nameText
@@ -576,6 +576,11 @@ Prefab:
       propertyPath: nodeRect.y
       value: 111.1936
       objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -2.04
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114173515735133182, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -685,7 +690,7 @@ Prefab:
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -867,6 +872,11 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
+      objectReference: {fileID: 213106893}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[1]
+      value: 
       objectReference: {fileID: 213106892}
     m_RemovedComponents:
     - {fileID: 114173515735133182, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -897,7 +907,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -944,6 +954,28 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &213106893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 213106890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  control: 4
+  _audioSource:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 2020536689}
+  startVolume: 1
+  endVolume: 0
+  fadeDuration: 1
+  waitUntilFinished: 0
+  audioSourceOLD: {fileID: 0}
 --- !u!114 &213106896 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -1779,7 +1811,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 533533621}
   selectedCommands:
-  - {fileID: 533533622}
+  - {fileID: 533533640}
   variables:
   - {fileID: 533533635}
   description: 
@@ -2145,7 +2177,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: Load PickedUpToyHead into tmp
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2259,7 +2291,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   description: Load PickedUpToyBody into tmp
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2421,7 +2453,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 0
   description: Load BenActive into tmp
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2882,7 +2914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
 --- !u!114 &619191301
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 619191299}
@@ -2894,7 +2926,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 0
   description: PickedUpToyFixed = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2955,7 +2987,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3177,6 +3209,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &686724288 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1263245183040418, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1595866453}
+--- !u!114 &686724305 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114875146833686784, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1595866453}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &686724310 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114137589466432852, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1595866453}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &686724311 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114754362380341288, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1595866453}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+--- !u!114 &686724317 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1595866453}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &726377212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3454,7 +3515,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   description: Remove Letter_Ted
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3524,7 +3585,7 @@ MonoBehaviour:
   itemId: 16
   indentLevel: 0
   description: Get Letter_Ted_Translated
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3553,6 +3614,12 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &754224895 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114616912821604368, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2076436814}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &754224903
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5031,7 +5098,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2025993605}
+      objectReference: {fileID: 2025993601}
     - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: nameText
@@ -5663,6 +5730,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 395705370}
     m_Modifications:
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 11.55
@@ -5694,6 +5766,30 @@ Prefab:
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 686724305}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 686724311}
+    - target: {fileID: 114839809926689040, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 1160106809}
+    - target: {fileID: 114881518696217790, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 2020536689}
+    - target: {fileID: 4819416715357298, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.96
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
@@ -6215,7 +6311,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   description: PickedUpToyHead = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6316,7 +6412,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: Get Toy_Head
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6771,7 +6867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 354737572}
+  selectedFlowchart: {fileID: 2023222325}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -7139,8 +7235,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 213.86293
-    y: 359.8885
-    width: 130.68181
+    y: 357.71457
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7165,8 +7261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 213.86307
-    y: 484.88773
+    x: 211.68916
+    y: 489.23553
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7298,7 +7394,7 @@ MonoBehaviour:
   itemId: 39
   indentLevel: 0
   description: BenState = 3
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7493,8 +7589,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 1
-  description: Load BenState into tmp
-  targetObject: {fileID: 0}
+  description: BenState = 1
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7735,7 +7831,7 @@ MonoBehaviour:
   itemId: 47
   indentLevel: 0
   description: Load BenState into tmp
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7779,7 +7875,7 @@ MonoBehaviour:
   itemId: 46
   indentLevel: 0
   description: BenSaved = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8040,7 +8136,7 @@ MonoBehaviour:
   itemId: 31
   indentLevel: 1
   description: BenState = 2
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8146,7 +8242,7 @@ MonoBehaviour:
   itemId: 28
   indentLevel: 0
   description: Load BenState into tmp
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8190,7 +8286,7 @@ MonoBehaviour:
   itemId: 27
   indentLevel: 1
   description: Remove Toy_Head
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8378,7 +8474,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 1
   description: Remove Toy_Body
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8451,7 +8547,7 @@ MonoBehaviour:
   itemId: 15
   indentLevel: 1
   description: BenState = 2
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8512,7 +8608,7 @@ MonoBehaviour:
   itemId: 14
   indentLevel: 0
   description: Load BenState into tmp
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8555,8 +8651,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 63
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 686724317}
+  targetBlock: {fileID: 686724305}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -8575,8 +8671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 62
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 686724317}
+  targetBlock: {fileID: 686724310}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -8596,7 +8692,7 @@ MonoBehaviour:
   itemId: 64
   indentLevel: 0
   description: BenActive = false
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8643,9 +8739,21 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &2023222324 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 102360108}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &2023222325 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 102360108}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!114 &2023222329
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -8701,7 +8809,7 @@ MonoBehaviour:
   itemId: 65
   indentLevel: 0
   description: BenSaved = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8750,7 +8858,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2023222331
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -8762,7 +8870,7 @@ MonoBehaviour:
   itemId: 68
   indentLevel: 1
   description: Remove Toy_Head
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8793,7 +8901,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2023222332
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2023222266}
@@ -8805,7 +8913,7 @@ MonoBehaviour:
   itemId: 67
   indentLevel: 1
   description: Remove Toy_Body
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8858,7 +8966,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   description: PickedUpToyBody = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8959,7 +9067,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: Get Toy_Body
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 686724288}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8990,7 +9098,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2025993605
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025993599}
@@ -9259,12 +9367,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 754224892}
+      objectReference: {fileID: 754224895}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 754224903}
+      objectReference: {fileID: 754224893}
     - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: nameText

@@ -386,11 +386,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 51.97978, y: 77.21471}
+  scrollPos: {x: -105.48396, y: 25.568228}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 304
-  zoom: 0.9100001
+  zoom: 0.63999987
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -399,8 +399,7 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 63848127}
-  selectedCommands:
-  - {fileID: 63848121}
+  selectedCommands: []
   variables:
   - {fileID: 63848123}
   description: 
@@ -960,12 +959,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 343390694}
+      objectReference: {fileID: 343390700}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 343390706}
+      objectReference: {fileID: 343390703}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
@@ -1293,7 +1292,7 @@ Prefab:
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: blockViewHeight
-      value: 545
+      value: 379
       objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -1600,6 +1599,16 @@ Prefab:
       propertyPath: character
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nameText
+      value: ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -1.78
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -1630,7 +1639,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 227.52307
     y: 253.48215
-    width: 124.285706
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1645,6 +1654,7 @@ MonoBehaviour:
   - {fileID: 343390711}
   - {fileID: 343390699}
   - {fileID: 343390709}
+  - {fileID: 343390703}
   - {fileID: 343390697}
   - {fileID: 343390707}
   - {fileID: 343390715}
@@ -1688,8 +1698,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 70
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 894166625}
+  targetBlock: {fileID: 894166613}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -1709,7 +1719,7 @@ MonoBehaviour:
   itemId: 68
   indentLevel: 0
   description: Initiate StatueHealth
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1769,13 +1779,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 69
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 894166625}
+  targetBlock: {fileID: 894166618}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
   startIndex: 0
   callMode: 2
+--- !u!114 &343390700 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114616912821604368, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 343390691}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &343390702
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1790,6 +1806,32 @@ MonoBehaviour:
   scope: 0
   key: StatueHealth
   value: 0
+--- !u!114 &343390703
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343390693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 72
+  indentLevel: 0
+  storyText: Is that... my voice?
+  description: 
+  character: {fileID: 894166597}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &343390706
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1804,7 +1846,7 @@ MonoBehaviour:
   itemId: 63
   indentLevel: 0
   description: Go to Bridge Level
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1866,7 +1908,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 
   description: 
-  character: {fileID: 0}
+  character: {fileID: 894166597}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1877,6 +1919,12 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &343390708 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 343390691}
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!114 &343390709
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1892,7 +1940,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 
   description: 
-  character: {fileID: 0}
+  character: {fileID: 343390708}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1918,7 +1966,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 
   description: 
-  character: {fileID: 0}
+  character: {fileID: 894166597}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1943,7 +1991,7 @@ MonoBehaviour:
   itemId: 61
   indentLevel: 0
   description: Remove Statue_Head Item
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3410,6 +3458,16 @@ Prefab:
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.x
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: LookRightIfNotLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 1.41
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -4963,6 +5021,11 @@ Prefab:
       propertyPath: nodeRect.y
       value: 114.602684
       objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 1.41
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -5026,7 +5089,7 @@ MonoBehaviour:
   itemId: 94
   indentLevel: 0
   description: Save Reaction into InscriptionReaction
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5440,7 +5503,7 @@ MonoBehaviour:
   itemId: 80
   indentLevel: 0
   description: Load InscriptionReaction into Reaction
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5499,7 +5562,7 @@ MonoBehaviour:
   itemId: 78
   indentLevel: 0
   description: Save StatueVerse
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6229,7 +6292,7 @@ MonoBehaviour:
   itemId: 52
   indentLevel: 0
   description: Load StatueVerse
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6342,7 +6405,7 @@ MonoBehaviour:
   itemId: 99
   indentLevel: 1
   description: Save Reaction into InscriptionReaction
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6433,7 +6496,7 @@ MonoBehaviour:
   itemId: 97
   indentLevel: 1
   description: Save StatueVerse
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 894166596}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6480,6 +6543,35 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!1 &894166596 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1263245183040418, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855047216}
+--- !u!114 &894166597 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114326920795114900, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855047216}
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+--- !u!114 &894166613 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114875146833686784, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855047216}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &894166618 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114137589466432852, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855047216}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &894166625 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855047216}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &904577856
 GameObject:
   m_ObjectHideFlags: 0
@@ -8422,6 +8514,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 395705370}
     m_Modifications:
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 48.8
@@ -8454,6 +8551,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114881518696217790, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 661659825}
+    - target: {fileID: 114839809926689040, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 429598819}
+    - target: {fileID: 114417864887088304, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 429598819}
+    - target: {fileID: 114335713508829316, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 661659825}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 894166613}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 1855047218}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
   m_IsPrefabParent: 0
@@ -8462,6 +8589,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
     type: 2}
   m_PrefabInternal: {fileID: 1855047216}
+--- !u!114 &1855047218 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114881518696217790, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1855047216}
+  m_Script: {fileID: 11500000, guid: bc30c92f7ffe3d746ac76cd528d616e5, type: 3}
 --- !u!1 &1879956559
 GameObject:
   m_ObjectHideFlags: 1
@@ -8489,7 +8622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 894166625}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1

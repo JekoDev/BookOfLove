@@ -120,6 +120,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 395705370}
     m_Modifications:
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 11.55
@@ -152,6 +157,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114881518696217790, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 1720863555}
+    - target: {fileID: 114839809926689040, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 102820556}
+    - target: {fileID: 114417864887088304, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 102820556}
+    - target: {fileID: 114335713508829316, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: _audioSource.audioSourceVal
+      value: 
+      objectReference: {fileID: 1720863555}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 5768243}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 5768244}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
   m_IsPrefabParent: 0
@@ -160,6 +195,35 @@ Transform:
   m_PrefabParentObject: {fileID: 4386673245673620, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
     type: 2}
   m_PrefabInternal: {fileID: 5768239}
+--- !u!1 &5768241 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1263245183040418, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 5768239}
+--- !u!114 &5768242 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114875146833686784, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 5768239}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &5768243 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114137589466432852, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 5768239}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &5768244 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114754362380341288, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 5768239}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+--- !u!114 &5768245 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114326920795114900, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 5768239}
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!4 &29798303 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -478,6 +542,11 @@ Prefab:
       propertyPath: commandList.Array.data[0]
       value: 
       objectReference: {fileID: 2082583820}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 2.56
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
@@ -719,11 +788,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0.6185559, y: 8.845359}
+  scrollPos: {x: 150.79922, y: 422.70798}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396
-  zoom: 0.97
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -1070,6 +1139,11 @@ Prefab:
       propertyPath: commandList.Array.data[7]
       value: 
       objectReference: {fileID: 297569745}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -1.8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -1104,7 +1178,7 @@ MonoBehaviour:
   itemId: 15
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1191,7 +1265,7 @@ MonoBehaviour:
   itemId: 10
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1531,7 +1605,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 954513552}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[0]
@@ -1542,6 +1616,16 @@ Prefab:
       propertyPath: commandList.Array.data[1]
       value: 
       objectReference: {fileID: 954513552}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 3.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: LookRightIfNotLeft
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -1893,12 +1977,12 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
-      objectReference: {fileID: 583374484}
+      objectReference: {fileID: 583374482}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 583374482}
+      objectReference: {fileID: 583374484}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -1952,9 +2036,9 @@ MonoBehaviour:
   HelperGroundLine: -1.85
   DrawCameraHelper: 1
   CameraHelper: 16.82
-  CharacterBounds: 0
-  CharacterBoundLeft: 0
-  CharacterBoundRight: 0
+  CharacterBounds: 1
+  CharacterBoundLeft: -0.8
+  CharacterBoundRight: 65.7
 --- !u!114 &395705372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,7 +2477,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 660841861}
+      objectReference: {fileID: 660841857}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
@@ -2721,7 +2805,7 @@ Prefab:
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: blockViewHeight
-      value: 545
+      value: 424
       objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -3023,6 +3107,21 @@ Prefab:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 211.36136
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 112.32996
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -3067,7 +3166,7 @@ GameObject:
   m_PrefabInternal: {fileID: 374687245}
 --- !u!114 &583374482
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 583374481}
@@ -3101,7 +3200,7 @@ MonoBehaviour:
   itemId: 5
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3442,7 +3541,7 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
-      objectReference: {fileID: 613407725}
+      objectReference: {fileID: 613407726}
     - target: {fileID: 114616912821604368, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[0]
@@ -3452,7 +3551,7 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 613407726}
+      objectReference: {fileID: 613407725}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114173515735133182, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -3477,7 +3576,7 @@ MonoBehaviour:
   itemId: 5
   indentLevel: 0
   description: Load graveyard
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3526,7 +3625,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &613407726
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 613407724}
@@ -3837,7 +3936,7 @@ MonoBehaviour:
   itemId: 50
   indentLevel: 0
   description: Load StatueHealth
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -3880,8 +3979,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 66
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 1265216070}
+  targetBlock: {fileID: 5768243}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3935,8 +4034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 68
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 1265216070}
+  targetBlock: {fileID: 5768242}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -3982,7 +4081,7 @@ MonoBehaviour:
   itemId: 65
   indentLevel: 0
   description: Increase StatueHealth
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4043,7 +4142,7 @@ MonoBehaviour:
   itemId: 86
   indentLevel: 0
   description: ExitOpen = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4103,8 +4202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 1265216070}
+  targetBlock: {fileID: 5768242}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4149,8 +4248,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 1265216070}
+  targetBlock: {fileID: 5768243}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4171,7 +4270,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 314.303
     y: 319.84143
-    width: 181.95877
+    width: 180.9091
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4200,7 +4299,7 @@ MonoBehaviour:
   itemId: 82
   indentLevel: 0
   description: Increase StatueHealth
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4261,7 +4360,7 @@ MonoBehaviour:
   itemId: 81
   indentLevel: 0
   description: BenActive = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4321,8 +4420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 1265216070}
+  targetBlock: {fileID: 5768242}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4367,8 +4466,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 0}
+  targetFlowchart: {fileID: 1265216070}
+  targetBlock: {fileID: 5768243}
   startLabel:
     stringRef: {fileID: 0}
     stringVal: 
@@ -4388,7 +4487,7 @@ MonoBehaviour:
   itemId: 77
   indentLevel: 0
   description: Increase StatueHealth
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4449,7 +4548,7 @@ MonoBehaviour:
   itemId: 76
   indentLevel: 0
   description: EthanActive = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4536,7 +4635,7 @@ MonoBehaviour:
   itemId: 90
   indentLevel: 0
   description: Remove Rings
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4579,7 +4678,7 @@ MonoBehaviour:
   itemId: 89
   indentLevel: 0
   description: Remove Letter
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4622,7 +4721,7 @@ MonoBehaviour:
   itemId: 88
   indentLevel: 0
   description: Remove Rings
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -4854,7 +4953,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 663020211}
+      objectReference: {fileID: 663020209}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
@@ -5374,6 +5473,16 @@ Prefab:
       propertyPath: commandList.Array.data[48]
       value: 
       objectReference: {fileID: 663020209}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 214.93279
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -5467,7 +5576,7 @@ MonoBehaviour:
   itemId: 94
   indentLevel: 0
   description: Save Reaction into InscriptionReaction
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5851,7 +5960,7 @@ MonoBehaviour:
   itemId: 80
   indentLevel: 0
   description: Load InscriptionReaction into Reaction
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -5910,7 +6019,7 @@ MonoBehaviour:
   itemId: 78
   indentLevel: 0
   description: Save StatueVerse
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6640,7 +6749,7 @@ MonoBehaviour:
   itemId: 52
   indentLevel: 0
   description: Load StatueVerse
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6723,7 +6832,7 @@ MonoBehaviour:
   itemId: 101
   indentLevel: 1
   description: Save Reaction into InscriptionReaction
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -6784,7 +6893,7 @@ MonoBehaviour:
   itemId: 100
   indentLevel: 1
   description: Save StatueVerse
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7257,7 +7366,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Yeah, here it is.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -7360,7 +7469,7 @@ MonoBehaviour:
   itemId: 43
   indentLevel: 0
   description: RingsActive = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7427,7 +7536,7 @@ MonoBehaviour:
   itemId: 42
   indentLevel: 0
   description: SavedShaun = true
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7563,7 +7672,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 39.999786
-    y: 391.70697
+    y: 393.43112
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -7660,7 +7769,7 @@ MonoBehaviour:
   itemId: 38
   indentLevel: 0
   description: Remove Ring
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -7703,7 +7812,7 @@ MonoBehaviour:
   itemId: 37
   indentLevel: 0
   description: Remove Letter
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8028,7 +8137,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: You mean her ring?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -8078,7 +8187,7 @@ MonoBehaviour:
   itemId: 23
   indentLevel: 1
   description: Give Photo_Jen
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8248,7 +8357,7 @@ MonoBehaviour:
   itemId: 17
   indentLevel: 0
   description: Save ShaunState
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8426,7 +8535,7 @@ MonoBehaviour:
   itemId: 12
   indentLevel: 0
   description: Load ShaunState
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -8526,7 +8635,7 @@ MonoBehaviour:
   itemId: 40
   indentLevel: 0
   description: Remove Photo
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -9003,7 +9112,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -10239,6 +10348,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1265216070 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+    type: 2}
+  m_PrefabInternal: {fileID: 5768239}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &1266064971
 GameObject:
   m_ObjectHideFlags: 0
@@ -10645,7 +10760,7 @@ Prefab:
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -10808,7 +10923,7 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 1399751994}
+      objectReference: {fileID: 1399751991}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
@@ -10842,15 +10957,30 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[2]
       value: 
-      objectReference: {fileID: 1399751997}
+      objectReference: {fileID: 1399751994}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[3]
       value: 
-      objectReference: {fileID: 1399751993}
+      objectReference: {fileID: 1399751997}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[4]
+      value: 
+      objectReference: {fileID: 1399752006}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: 6.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[5]
+      value: 
+      objectReference: {fileID: 1399751993}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[6]
       value: 
       objectReference: {fileID: 1399751992}
     m_RemovedComponents:
@@ -10874,6 +11004,36 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1399751987}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &1399751991
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1399751989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  variable: {fileID: 1399751995}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 3
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
 --- !u!114 &1399751992
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10971,7 +11131,7 @@ MonoBehaviour:
   itemId: 7
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -11014,8 +11174,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 1
+  description: Disable Model's Sprite Renderer
+  targetObject: {fileID: 5768241}
+  targetComponentAssemblyName: UnityEngine.SpriteRenderer, UnityEngine.CoreModule,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: SpriteRenderer
+  targetMethod: 
+  targetMethodText: 
+  methodParameters:
+  - objValue:
+      typeAssemblyname: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      typeFullname: UnityEngine.Vector3
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 100, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1399752001 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1399751987}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+--- !u!114 &1399752006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1399751989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 1
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 5768241}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -11639,7 +11849,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 732926821}
+      objectReference: {fileID: 732926838}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.8
@@ -11827,6 +12037,11 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[3]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -3.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -12026,6 +12241,210 @@ Transform:
   m_Father: {fileID: 977866480}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1755898073 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853955077}
+--- !u!4 &1755898074 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853955077}
+--- !u!114 &1755898075
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755898073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 1
+  description: 
+  targetObject: {fileID: 5768241}
+  targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Player
+  targetMethod: ChangeLevel
+  targetMethodText: 'ChangeLevel (Int32, Single): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 6
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  - objValue:
+      typeAssemblyname: System.Single, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Single
+      intValue: 0
+      boolValue: 0
+      floatValue: 25
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1755898076
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755898073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 5768241}
+  targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Player
+  targetMethod: LoadValue
+  targetMethodText: 'LoadValue (String): String'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: StatueHealth
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 1
+  returnValueVariableKey: Var
+  returnValueType: System.String
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1755898077
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755898073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4580f28dd8581476b810b38eea2f1316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: Var
+  value: 
+--- !u!114 &1755898078
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755898073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 1755898077}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 3
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+--- !u!114 &1755898079
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755898073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+--- !u!114 &1755898080
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755898073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 1
+  storyText: Can't go here.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1755898084 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1853955077}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!4 &1778368139 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -12375,6 +12794,243 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841921314}
+--- !u!1001 &1853955077
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1891941782}
+    m_Modifications:
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: variables.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 51.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.9599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: -5.9290204
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 3.0706084
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -5.906511
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: -3.9162908
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: 3.3901305
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -3.965384
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 3.421287
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: 2.993536
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 2.0108838
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: 1.0189706
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: 2.0108838
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: 1.0189706
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
+      value: 2.0108838
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
+      value: 1.0189706
+      objectReference: {fileID: 0}
+    - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_Name
+      value: ExitBlocked
+      objectReference: {fileID: 0}
+    - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4209d6d6f7f33174fa916c6600367ded,
+        type: 3}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: description
+      value: The Museum
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 1755898084}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 1755898076}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[0]
+      value: 
+      objectReference: {fileID: 1755898076}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1755898078}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: scrollPos.x
+      value: 77.19287
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: scrollPos.y
+      value: 66.999275
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: zoom
+      value: 0.8200002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: variables.Array.data[0]
+      value: 
+      objectReference: {fileID: 1755898077}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[2]
+      value: 
+      objectReference: {fileID: 1755898075}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[3]
+      value: 
+      objectReference: {fileID: 1755898079}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: commandList.Array.data[4]
+      value: 
+      objectReference: {fileID: 1755898080}
+    - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: WalkToPoint
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+    - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1879956559
 GameObject:
   m_ObjectHideFlags: 1
@@ -12402,7 +13058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 1399752001}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -12450,6 +13106,7 @@ Transform:
   - {fileID: 663020204}
   - {fileID: 297569736}
   - {fileID: 1399751988}
+  - {fileID: 1755898074}
   m_Father: {fileID: 2143718045}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
