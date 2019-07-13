@@ -149,18 +149,26 @@ public class Movement : MonoBehaviour {
         if (model.transform.position.x < world.CameraBorderLeft )
         {
             model.transform.position = new Vector3(world.CameraBorderLeft, model.transform.position.y, model.transform.position.z);
+            ElliotAnim.SetBool("Walking", false);
         }
 
         if (model.transform.position.x > world.CameraBorderRight)
         {
             model.transform.position = new Vector3(world.CameraBorderRight, model.transform.position.y, model.transform.position.z);
+            ElliotAnim.SetBool("Walking", false);
         }
 
 
         if(world.CharacterBounds == true)
         {
-            if (model.transform.position.x <= world.CharacterBoundLeft + camHalfWidth) model.transform.position = new Vector3(world.CharacterBoundLeft + camHalfWidth, model.transform.position.y, model.transform.position.z);
-            if (model.transform.position.x > world.CharacterBoundRight - camHalfWidth) model.transform.position = new Vector3(world.CharacterBoundRight - camHalfWidth, model.transform.position.y, model.transform.position.z);
+            if (model.transform.position.x <= world.CharacterBoundLeft + camHalfWidth){
+                ElliotAnim.SetBool("Walking", false);
+                model.transform.position = new Vector3(world.CharacterBoundLeft + camHalfWidth, model.transform.position.y, model.transform.position.z);
+            }
+            if (model.transform.position.x > world.CharacterBoundRight - camHalfWidth){
+                model.transform.position = new Vector3(world.CharacterBoundRight - camHalfWidth, model.transform.position.y, model.transform.position.z);
+                ElliotAnim.SetBool("Walking", false);
+            }
         }
 
     }

@@ -58,6 +58,11 @@ public class Player : MonoBehaviour {
         return "";
     }
 
+    public void DisableSpriteRenderer(bool State)
+    {
+        this.GetComponent<SpriteRenderer>().enabled = !State;
+    }
+
 
 
     public void RemoveItem(Item item)
@@ -96,5 +101,15 @@ public class Player : MonoBehaviour {
     public void SetBloom(float bloom)
     {
         ppt.bloomTo = bloom;
+    }
+
+    public void EnterFlashback()
+    {
+        //Placeholder
+    }
+
+    public void LeaveFlashback()
+    {
+        //Placeholder
     }
 }
