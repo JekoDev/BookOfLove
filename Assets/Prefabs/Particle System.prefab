@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198606794065745426}
   - component: {fileID: 199175670119304700}
   m_Layer: 0
-  m_Name: BUBBLES
+  m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
