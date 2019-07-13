@@ -100,7 +100,7 @@ public class Player : MonoBehaviour {
 
     public void SetBloom(float bloom)
     {
-        ppt.bloomTo = bloom;
+        //ppt.bloomTo = bloom;
     }
 
     public void EnterFlashback()
