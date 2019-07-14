@@ -2404,6 +2404,16 @@ Prefab:
       propertyPath: WalkToPoint
       value: -1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 45.45227
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 104.37543
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
@@ -2584,6 +2594,12 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 2
+--- !u!114 &595321026 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 595321011}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &602257905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,12 +2908,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 681080457}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &681080467 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 681080457}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &686385291
 GameObject:
   m_ObjectHideFlags: 0
@@ -8274,7 +8284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 681080467}
+  selectedFlowchart: {fileID: 595321026}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
