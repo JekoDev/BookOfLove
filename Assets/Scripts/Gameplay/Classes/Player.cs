@@ -112,4 +112,19 @@ public class Player : MonoBehaviour {
     {
         //Placeholder
     }
+
+    public void StatueThing(int nr)
+    {
+        GameObject cache = GameObject.Find("Statue");
+
+        if (cache != null)
+        {
+            cache.GetComponent<Animator>().SetInteger("Statue", nr);
+            if (nr<3) nr++;
+            SaveValue("StatueHealth", nr.ToString());
+        }
+        else {
+            Debug.Log("DAFUQ?");
+        }
+    }
 }
