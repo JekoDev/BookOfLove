@@ -980,7 +980,7 @@ Prefab:
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -1296,12 +1296,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 213106888}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &213106898 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 213106888}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &260725659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1761,7 @@ MonoBehaviour:
   CameraBorderRight: 46.6
   HelperGroundLine: -3.4
   DrawCameraHelper: 1
-  CameraHelper: -0.94
+  CameraHelper: 3.05
   CharacterBounds: 1
   CharacterBoundLeft: -4.92
   CharacterBoundRight: 47.65
@@ -4483,7 +4477,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: It looks so ancient, I wonder who came up with something like this.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1595866455}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -8564,7 +8558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 213106898}
+  selectedFlowchart: {fileID: 2076436815}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -12692,6 +12686,12 @@ Prefab:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2076436815 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2076436814}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &2081143531
 GameObject:
   m_ObjectHideFlags: 0
