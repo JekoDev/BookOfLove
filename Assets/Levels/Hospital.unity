@@ -235,12 +235,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1754428624}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &75899730 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1754428624}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1001 &120936558
 Prefab:
   m_ObjectHideFlags: 0
@@ -2823,7 +2817,7 @@ MonoBehaviour:
   itemId: 6
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 75899701}
   targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -2854,7 +2848,7 @@ MonoBehaviour:
       typeFullname: System.Single
       intValue: 0
       boolValue: 0
-      floatValue: 16.82
+      floatValue: 30.5
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
@@ -2898,6 +2892,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 681080457}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &681080467 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 681080457}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &686385291
 GameObject:
   m_ObjectHideFlags: 0
@@ -8274,7 +8274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 75899730}
+  selectedFlowchart: {fileID: 681080467}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
