@@ -10,6 +10,7 @@ public class ItemMenu : MonoBehaviour {
     private bool collapsed;
     public bool collapse;
     GameObject itemContainer;
+    GameObject itemBanner;
     private float offsetItem;
 
     // Use this for initialization
@@ -19,6 +20,7 @@ public class ItemMenu : MonoBehaviour {
         inp = GameObject.Find("Movement").GetComponent<InputManager>();
         selected = GameObject.Find("SelectedItem").GetComponent<SpriteRenderer>();
         itemContainer = GameObject.Find("AllItems");
+        itemBanner = GameObject.Find("ItemBanner");
     }
 
     void Update()
@@ -55,6 +57,7 @@ public class ItemMenu : MonoBehaviour {
                 cache.GetComponent<MenuSingleItem>().item = i;
             }
             collapsed = true;
+            itemBanner.GetComponent<Animator>().SetBool("Enable", true);
         }
 
         if (collapse == false && collapsed == true)
@@ -65,6 +68,7 @@ public class ItemMenu : MonoBehaviour {
             {
                 GameObject.Destroy(itemContainer.transform.GetChild(i).gameObject);
             }
+            itemBanner.GetComponent<Animator>().SetBool("Enable", false);
         }
 
     }
