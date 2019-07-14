@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Toy_Body
   m_EditorClassIdentifier: 
   name: Toy_Body
-  artwork: {fileID: 21300000, guid: a68b8b01c14425145aac39685b4bc59f, type: 3}
+  artwork: {fileID: 21300000, guid: 7b0e1a2eaf63411488599b4f8bd6364d, type: 3}
   description: 
   pickedUp: 0
