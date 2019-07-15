@@ -31,6 +31,11 @@ public class Movement : MonoBehaviour {
 
     private Animator ElliotAnim;
     private SpriteRenderer ElliotSprite;
+
+    [HideInInspector]
+    public bool BlockDialogue;
+    [HideInInspector]
+    public bool BlockDialogueB;
          
 	void Start () {
         inp     = GameObject.Find("Movement").GetComponent<InputManager>();

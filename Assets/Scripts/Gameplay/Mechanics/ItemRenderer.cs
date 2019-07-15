@@ -22,6 +22,7 @@ public class ItemRenderer : MonoBehaviour {
             _renderer = this.gameObject.AddComponent<SpriteRenderer>();
             _renderer.sprite = item.artwork;
             _renderer.sortingLayerName = "Objects";
+            _renderer.transform.localScale *= item.scaleScene;
             isRender = true;
         }
 	}

@@ -10,6 +10,11 @@ public class Item : ScriptableObject, ISerializationCallbackReceiver {
     public string description;
     public bool pickedUp;
 
+    public float scaleScene = 1.0f;
+    public float scaleInventory = 1.0f;
+    public float XOffsetInv = 0.0f;
+    public float YOffsetInv = 0.0f;
+
 
     public void OnBeforeSerialize()
     {
