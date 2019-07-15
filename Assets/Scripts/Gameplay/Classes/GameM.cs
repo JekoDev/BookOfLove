@@ -8,6 +8,7 @@ public static class GameM
     private static List<Item> Itemlist;
     private static Item Selected;
     private static Dictionary<string, string> Save = new Dictionary<string, string>();
+    private static bool Skipintro;
 
     public static Dictionary<string, string> save
     {
@@ -16,6 +17,18 @@ public static class GameM
         }
         set{
             Save = new Dictionary<string, string>(value);
+        }
+    }
+
+    public static bool skipintro
+    {
+        get
+        {
+            return Skipintro;
+        }
+        set
+        {
+            Skipintro = value;
         }
     }
 

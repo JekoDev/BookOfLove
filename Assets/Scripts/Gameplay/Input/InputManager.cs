@@ -43,7 +43,7 @@ public class InputManager : MonoBehaviour {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))     Top   = true;
 
         if (Input.GetKeyDown(KeyCode.Space)  || Input.GetKeyDown(KeyCode.Return)) Action   = true;
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Tab))    Pause    = true;
+        if (Input.GetKeyDown(KeyCode.Escape))                          Pause    = true;
 
         if (Input.GetKeyDown(KeyCode.Mouse0))  PointLeft    = true;
         if (Input.GetKeyDown(KeyCode.Mouse1))  PointRight   = true;
