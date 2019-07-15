@@ -1839,6 +1839,12 @@ Prefab:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &297569734 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 297569733}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!114 &297569735 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -1931,7 +1937,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Picked up Rings.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2000,7 +2006,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Wha-... How? Why is my name on there? Who is Jessie?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2026,7 +2032,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '"Elliot + Jessie"?!'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2052,7 +2058,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Wait, the text is different...
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2078,7 +2084,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: He left the rings behind.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4759,7 +4765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.78700006}
-  m_AnchoredPosition: {x: 15.75, y: 1.1650028}
+  m_AnchoredPosition: {x: 15.75, y: 1.1650085}
   m_SizeDelta: {x: -86.5, y: -88.93001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550912952
@@ -11378,7 +11384,7 @@ MonoBehaviour:
     gameObjectVal: {fileID: 0}
 --- !u!114 &732926845
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732926812}
@@ -11848,12 +11854,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &732926862 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1670174780}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &732926863
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -12277,7 +12277,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &732926879
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732926812}
@@ -12303,7 +12303,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &732926880
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732926812}
@@ -12329,7 +12329,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &732926881
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 732926812}
@@ -18612,12 +18612,6 @@ Canvas:
   m_SortingLayerID: -576729265
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1631003824 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 243141511}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &1632922550 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -18743,7 +18737,7 @@ Prefab:
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -18886,7 +18880,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 732926862}
+      objectReference: {fileID: 732926826}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
@@ -20453,7 +20447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1631003824}
+  selectedFlowchart: {fileID: 297569734}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
