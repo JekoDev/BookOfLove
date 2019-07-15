@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Name: Statue_Head
   m_EditorClassIdentifier: 
   name: Statue_Head
-  artwork: {fileID: 21300000, guid: fbe0eaee1d3cb7749802719b62fddaf8, type: 3}
+  artwork: {fileID: 21300000, guid: 3a72748a60f53774eb60cba55c6783d2, type: 3}
   description: A stare as cold as the stone it's made of.
   pickedUp: 0
+  scaleScene: 1
+  scaleInventory: 0.5
+  XOffsetInv: 0
+  YOffsetInv: 0

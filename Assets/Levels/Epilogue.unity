@@ -303,16 +303,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4782cf42f2644447b9631f6e522160b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 1
+  volume: 0.665
   loop: 1
   targetAudioSource: {fileID: 0}
   audioMode: 0
   beepSounds:
-  - {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
-  - {fileID: 8300000, guid: f637c5ce9d10e45c7855ed89bfc6b97e, type: 3}
-  - {fileID: 8300000, guid: c53b7c20372e444c6bd7f2ac0729bbe2, type: 3}
+  - {fileID: 8300000, guid: da157ddcd14762148a9a04494962109e, type: 3}
+  - {fileID: 8300000, guid: c9f4d9a3c334fc649922e29a7fc10d54, type: 3}
+  - {fileID: 8300000, guid: 8807652d9f576154a8252e5e045d9cf1, type: 3}
+  - {fileID: 8300000, guid: fc770884522395544bbf72e843fd2e16, type: 3}
+  - {fileID: 8300000, guid: c1ab11dcc99d17d4ea32a73fe6eee5e6, type: 3}
+  - {fileID: 8300000, guid: 8537d75b509648b45bebd24e44d988b2, type: 3}
+  - {fileID: 8300000, guid: f1b16dc7dca43d146814065dfecb9f5d, type: 3}
+  - {fileID: 8300000, guid: c3e8f7d3af6c7e44280e1de50c3ad806, type: 3}
+  - {fileID: 8300000, guid: ce2145b5e54634b42b275798a2702b37, type: 3}
+  - {fileID: 8300000, guid: eef49d5939c5dfe46a7858a27a666bdb, type: 3}
+  - {fileID: 8300000, guid: dd37df66c5705164f86ad1c658246562, type: 3}
+  - {fileID: 8300000, guid: babd82fac165efa489f993dfc981007e, type: 3}
+  - {fileID: 8300000, guid: 13f6c7762c94d784da7c36fe37ddcd3b, type: 3}
   soundEffect: {fileID: 0}
-  inputSound: {fileID: 8300000, guid: 14a396b1562834718b2d52b9c4639264, type: 3}
+  inputSound: {fileID: 8300000, guid: c18ae2c530c264a6880266d5e0a71337, type: 3}
 --- !u!114 &233428529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2819,7 +2829,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.98
+      value: 7.73
       objectReference: {fileID: 0}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalPosition.y
