@@ -10,7 +10,8 @@ public class TriggerDialog : MonoBehaviour {
     public enum triggerType
     {
         DIALOG_CLICKME,
-        DIALOG_AUTOSTART        
+        DIALOG_AUTOSTART,     
+        DIALOG_COLLIDE     
     }
 
     public triggerType trigger;
@@ -178,6 +179,7 @@ public class TriggerDialog : MonoBehaviour {
 
     public void OnTriggerEnter2D (Collider2D collision)
     {
+        if (collision.gameObject.name == "Model" && trigger == triggerType.DIALOG_COLLIDE) triggered = true;
         if (collision.gameObject.name == "cursor" && trigger == triggerType.DIALOG_CLICKME && mov.BlockDialogue == false && mov.BlockDialogueB == false)
         {
             triggered = true;
