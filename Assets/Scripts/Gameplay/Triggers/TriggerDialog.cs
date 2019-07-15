@@ -184,7 +184,7 @@ public class TriggerDialog : MonoBehaviour {
 
     public void OnTriggerEnter2D (Collider2D collision)
     {
-        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME && trigger == triggerType.DIALOG_DELETEME) && mov.BlockDialogue == false && mov.BlockDialogueB == false)
+        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME || trigger == triggerType.DIALOG_DELETEME) && mov.BlockDialogue == false && mov.BlockDialogueB == false)
         {
             triggered = true;
         }
