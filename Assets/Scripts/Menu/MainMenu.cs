@@ -17,8 +17,10 @@ public class MainMenu : MonoBehaviour {
     public bool trigger;
 
     public Button m_1Button, m_2Button, m_3Button;
+    public GameObject inst;
 
-
+    private bool triggerNew = false;
+    private float timer;
 
     // Use this for initialization
     void Start () {
@@ -51,11 +53,23 @@ public class MainMenu : MonoBehaviour {
                 GameObject.Find("Continue").SetActive(false);
             }
         }
+
+        if (triggerNew == true && Time.time - timer > 5f) 
+        {
+            SceneManager.LoadScene(1);
+        }
 	}
 
 
 
-    void Newgame() { SceneManager.LoadScene(1); }
+    void Newgame() {
+        ui.SetActive(false);
+        secondVideo.SetActive(false);
+        inst.GetComponent<SpriteRenderer>().enabled = true;
+        triggerNew = true;
+    }
+
+
     void Continuegame() { GameM.LoadGame(); }
 
     void Quit() {
