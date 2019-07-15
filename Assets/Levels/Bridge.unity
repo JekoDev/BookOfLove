@@ -471,7 +471,7 @@ Prefab:
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -624,7 +624,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2082583808}
+      objectReference: {fileID: 0}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.125
@@ -643,17 +643,17 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 2082583808}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[2]
       value: 
-      objectReference: {fileID: 2082583819}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[3]
       value: 
-      objectReference: {fileID: 2082583818}
+      objectReference: {fileID: 0}
     - target: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: storyText
@@ -765,7 +765,7 @@ Prefab:
     - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: nameText
-      value: ???
+      value: Mom
       objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -777,7 +777,28 @@ Prefab:
       propertyPath: nodeRect.y
       value: 145.28448
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114616912821604368, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 8.567566
+      objectReference: {fileID: 0}
+    - target: {fileID: 114616912821604368, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 278.79373
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &100161758
@@ -987,7 +1008,7 @@ Prefab:
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -1164,16 +1185,16 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[2]
       value: 
-      objectReference: {fileID: 243141517}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[3]
       value: 
-      objectReference: {fileID: 243141518}
+      objectReference: {fileID: 0}
     - target: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: storyText
-      value: "\u2190 Museum: To Remember the Past"
+      value: 'Museum: To Remember the Past'
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -1184,7 +1205,7 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
-      objectReference: {fileID: 243141516}
+      objectReference: {fileID: 243141514}
     - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: WalkToPoint
@@ -1281,7 +1302,7 @@ Prefab:
     - target: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: nameText
-      value: ???
+      value: Teddie's Phone
       objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -1298,17 +1319,17 @@ Prefab:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &243141512 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 243141511}
---- !u!1 &243141513 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a,
     type: 2}
   m_PrefabInternal: {fileID: 243141511}
 --- !u!114 &243141514 stripped
@@ -1323,87 +1344,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 243141511}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &243141516
+--- !u!114 &243141524 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243141513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 8
-  indentLevel: 0
-  storyText: "\u2193 Graveyard: To Mourn the Passed"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &243141517
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243141513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 7
-  indentLevel: 0
-  storyText: "\u2191 Hospital: To Heal the Wounds"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &243141518
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 243141513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  indentLevel: 0
-  storyText: "\u2192 ?\u0335\u0334\u035F\u0337\u0335?\u035D\u0322\u0328\u0340?\u0322\u0361\u034F\u0358\u0335
-    \ : To ?\u0361\u0335\u0327\u0489?\u035E\u0358?\u035E\u0338?\u035E\u0336\u0362\u035C\u035E
-    \u0315\u0321\u0362\u0338\u0321t\u0322\u035E\u0337\u0334h\u031Be\u031B\u0338\u031B\u035F
-    \u0340\u0360\u034F\u0337?\u031B\u034F\u0489\u034F?\u0362\u0489?\u031B\u034F\u0334"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 243141511}
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &260725659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2084,7 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2175,32 +2121,32 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 7.1232605
+      value: 31.77655
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 10.040706
+      value: 41.379604
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: 1.7337036
+      value: 7.5836487
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: 13.127361
+      value: 39.869884
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: -6.918762
+      value: -8.590179
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: 7.6678567
+      value: 32.321133
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -2215,32 +2161,32 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: 12.236572
+      value: 18.92221
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: -32.38751
+      value: -39.490993
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
-      value: 11.238464
+      value: 39.883453
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
-      value: -1.0088257
+      value: -38.862606
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
-      value: 2.0108838
+      value: 43.413086
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
-      value: 1.0189706
+      value: 32.83717
       objectReference: {fileID: 0}
     - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -2660,7 +2606,7 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2697,72 +2643,72 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 8.256874
+      value: 32.261482
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 8.473791
+      value: 11.869177
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: -3.951805
+      value: 30.893105
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: 8.62882
+      value: 17.528433
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: -9.686424
+      value: 25.574074
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: 1.3258572
+      value: 19.153189
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: -9.684624
+      value: 24.653053
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: 1.2960415
+      value: 24.40737
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: -10.368828
+      value: -5.871269
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: -15.4100895
+      value: 24.4269
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
-      value: 13.596077
+      value: -6.965172
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
-      value: -14.506739
+      value: 9.726706
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
-      value: 13.56208
+      value: -19.519768
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
-      value: 1.9525204
+      value: 10.316473
       objectReference: {fileID: 0}
     - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -2811,12 +2757,12 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].x
-      value: 13.56208
+      value: -19.659294
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].y
-      value: 1.9525204
+      value: -8.814554
       objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -2839,42 +2785,42 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].x
-      value: 13.30378
+      value: -19.1437
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].y
-      value: 5.051794
+      value: -16.663645
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].x
-      value: 13.30378
+      value: 42.659187
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].y
-      value: 5.051794
+      value: -17.159342
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
-      value: 13.30378
+      value: 41.558174
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
-      value: 5.051794
+      value: 11.145239
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].x
-      value: 13.30378
+      value: 41.558174
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].y
-      value: 5.051794
+      value: 11.145239
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -3264,7 +3210,7 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -3301,72 +3247,72 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: 1.4559889
+      value: -0.08977318
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: -2.4164438
+      value: -0.27298784
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: 0.74712753
+      value: 1.1973
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: -0.58091426
+      value: -0.17729044
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: 3.2771838
+      value: 1.2223139
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -0.7728698
+      value: 0.79317415
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: 3.4061587
+      value: 2.2104492
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: -2.230785
+      value: 0.9854578
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: 3.8683867
+      value: 2.7066898
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: -2.1846032
+      value: 1.2237066
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
-      value: 3.8333166
+      value: 2.7731285
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
-      value: 0.5492208
+      value: 2.565723
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
-      value: 2.6531875
+      value: 2.6575136
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
-      value: 0.6296203
+      value: 4.019548
       objectReference: {fileID: 0}
     - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -3381,7 +3327,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0f2cfa322bbcdee4695148d53a9122eb,
+      objectReference: {fileID: 21300000, guid: 481ef475540e2b4488283c48e2d39606,
         type: 3}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -3402,12 +3348,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 660841877}
+      objectReference: {fileID: 660841899}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 660841869}
+      objectReference: {fileID: 660841836}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
@@ -3415,32 +3361,32 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].x
-      value: 2.9403174
+      value: 1.7007532
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].y
-      value: 3.645973
+      value: 4.298372
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].x
-      value: 2.7203918
+      value: 1.2680597
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].y
-      value: 3.7680361
+      value: 4.3527617
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].x
-      value: 1.6378748
+      value: 1.4656296
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].y
-      value: 4.4450874
+      value: 5.707927
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -3735,7 +3681,7 @@ Prefab:
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: blockViewHeight
-      value: 424
+      value: 281
       objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -4073,107 +4019,187 @@ Prefab:
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
-      value: 0.949018
+      value: 1.1346159
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
-      value: 6.278131
+      value: 6.293037
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].x
-      value: -0.20068765
+      value: -0.38932228
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].y
-      value: 5.986843
+      value: 6.1754756
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].x
-      value: -0.42096496
+      value: -0.37949276
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].y
-      value: 4.1700954
+      value: 4.9196754
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].x
-      value: -1.163681
+      value: -0.06588936
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].y
-      value: 3.938082
+      value: 4.280338
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].x
-      value: -0.8745539
+      value: -0.24354553
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].y
-      value: 1.2619779
+      value: 3.871471
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].x
-      value: -3.077228
+      value: -0.60645676
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].y
-      value: 2.7601597
+      value: 3.4899592
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].x
-      value: -4.20063
+      value: -0.71025753
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].y
-      value: 0.9534762
+      value: 2.2480502
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].x
-      value: -4.30156
+      value: -0.57743835
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].y
-      value: -1.1425068
+      value: 1.518638
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].x
-      value: -3.772757
+      value: -0.6890621
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].y
-      value: -2.213478
+      value: 1.0970949
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].x
-      value: -2.7179122
+      value: -1.4730434
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].y
-      value: -2.5301123
+      value: 1.9483427
       objectReference: {fileID: 0}
     - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_SortingOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].x
+      value: -2.077608
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].y
+      value: 1.8560537
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].x
+      value: -2.760149
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].y
+      value: 2.7396102
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
+      value: -3.219267
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].y
+      value: 2.5639682
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].x
+      value: -3.819193
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].y
+      value: 1.9975847
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].x
+      value: -3.9120884
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].y
+      value: 0.95347536
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].x
+      value: -4.074848
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].y
+      value: -0.23565912
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[26].x
+      value: -3.2162838
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[26].y
+      value: -0.17307329
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].x
+      value: -2.3675404
+      objectReference: {fileID: 0}
+    - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].y
+      value: -0.077501774
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -4575,6 +4601,12 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &583374488 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 374687245}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &588060694
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,8 +5069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 316.98334
-    y: 388.91357
+    x: 314.92148
+    y: 389.9445
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5052,6 +5084,11 @@ MonoBehaviour:
   - {fileID: 660841864}
   - {fileID: 660841854}
   - {fileID: 660841853}
+  - {fileID: 660841893}
+  - {fileID: 660841894}
+  - {fileID: 660841895}
+  - {fileID: 660841896}
+  - {fileID: 660841897}
   - {fileID: 660841852}
   - {fileID: 660841851}
   - {fileID: 660841863}
@@ -5362,6 +5399,13 @@ MonoBehaviour:
   - {fileID: 660841866}
   - {fileID: 660841845}
   - {fileID: 660841849}
+  - {fileID: 660841900}
+  - {fileID: 660841903}
+  - {fileID: 660841902}
+  - {fileID: 660841901}
+  - {fileID: 660841881}
+  - {fileID: 660841904}
+  - {fileID: 660841898}
   - {fileID: 660841848}
   - {fileID: 660841862}
 --- !u!114 &660841848
@@ -5397,9 +5441,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 67
   indentLevel: 0
-  storyText: 
+  storyText: Hey Jessie, it'salready been a month.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -5565,9 +5609,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: 
+  storyText: "Mommy, why did Daddy leave? Doesn\u2019t he love me anymore? \r\n"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 5768245}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -5613,7 +5657,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 314.303
     y: 319.84143
-    width: 181.95877
+    width: 176.22946
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5626,6 +5670,20 @@ MonoBehaviour:
   - {fileID: 660841865}
   - {fileID: 660841860}
   - {fileID: 660841859}
+  - {fileID: 660841888}
+  - {fileID: 660841889}
+  - {fileID: 660841890}
+  - {fileID: 660841891}
+  - {fileID: 660841892}
+  - {fileID: 660841883}
+  - {fileID: 660841884}
+  - {fileID: 660841885}
+  - {fileID: 660841886}
+  - {fileID: 660841879}
+  - {fileID: 660841880}
+  - {fileID: 660841882}
+  - {fileID: 660841878}
+  - {fileID: 660841877}
   - {fileID: 660841858}
   - {fileID: 660841857}
 --- !u!114 &660841856
@@ -5783,9 +5841,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 79
   indentLevel: 0
-  storyText: 
+  storyText: "Hello this is Ted\r\n"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1010093890}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -6426,18 +6484,272 @@ MonoBehaviour:
   gameObjectData:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 0}
---- !u!114 &660841877 stripped
+--- !u!114 &660841877
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 459432147}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &660841881 stripped
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 113
+  indentLevel: 0
+  storyText: Goodybye Teddie
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841878
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 459432147}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 112
+  indentLevel: 0
+  storyText: I wish you have an nice life Teddie ... I ...
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841879
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 111
+  indentLevel: 0
+  storyText: I'm sorry ...
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841880
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 110
+  indentLevel: 0
+  storyText: But I thought ... I ... You know, my wife died a few years back and I
+    thought it would be nice to talk to someone right now, but...
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 125
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841882
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 109
+  indentLevel: 0
+  storyText: ' Sorry for calling, I''m ... I''m not going to call anymore.'
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841883
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 108
+  indentLevel: 0
+  storyText: "I found your message, the time capsule, do you remember, you left a
+    message in there. \r\n"
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841884
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 107
+  indentLevel: 0
+  storyText: 'You are probably not even using this phone anymore, but I thought -
+    I thought I could try to call anyway...
+
+'
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841885
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 106
+  indentLevel: 0
+  storyText: "Really stupid idea, you probably don't even remember me. \rI'm -I'm
+    sorry...\n"
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841886
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 105
+  indentLevel: 0
+  storyText: I just thought you might remember me -why did I even think that?
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &660841887
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6468,6 +6780,434 @@ MonoBehaviour:
   gameObjectData:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 0}
+--- !u!114 &660841888
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 104
+  indentLevel: 0
+  storyText: "Hey Teddie,s it's me, Elliot...\r\n"
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841889
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 103
+  indentLevel: 0
+  storyText: "unfortunately, I'm currently unavailable, please leave a message after
+    the beep and I'll call you back as soon as possible. \r\n"
+  description: 
+  character: {fileID: 243141524}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841890
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 102
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841891
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 101
+  indentLevel: 0
+  storyText: '... Ummm, hey it''s Elliot ...
+
+'
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841892
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 100
+  indentLevel: 0
+  storyText: "You know, umm ... your childhood friend.\r\n"
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841893
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 118
+  indentLevel: 0
+  storyText: "Oh Sweetie, I\u2019m sure that he still loves you very much.\r\n\n"
+  description: 
+  character: {fileID: 2082583813}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841894
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 117
+  indentLevel: 0
+  storyText: "But why didn't he call then? He promised that he would call once a week
+    and he hasn't even called on my birthday!\r\n"
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841895
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 116
+  indentLevel: 0
+  storyText: "Sweetie, I'm sure there is a reason...\r\n"
+  description: 
+  character: {fileID: 2082583813}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841896
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 115
+  indentLevel: 0
+  storyText: 'What reason is there for a parent not to call their son on their birthday?  '
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841897
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 114
+  indentLevel: 0
+  storyText: " Damn him and his stupid bear! I don\u2019t want  {i}him{/i} anymore!
+    \n"
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 124
+  indentLevel: 0
+  storyText: I hope you can rest now
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841899 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114616912821604368, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 459432147}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &660841900
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 123
+  indentLevel: 0
+  storyText: I brought flowers for you, they are your favourites ...
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841901
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 122
+  indentLevel: 0
+  storyText: How amI supposed to go on without you?
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841902
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 121
+  indentLevel: 0
+  storyText: Do you remember, you always told me that we could do anything together,
+    that we could overyome anything ... together
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841903
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 120
+  indentLevel: 0
+  storyText: 'It''s hard, it''s so hard without you. '
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &660841904
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660841834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 119
+  indentLevel: 0
+  storyText: But, you suffered so much during the last months ...
+  description: 
+  character: {fileID: 5768245}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1001 &663020201
 Prefab:
   m_ObjectHideFlags: 0
@@ -11508,7 +12248,7 @@ Prefab:
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -11661,7 +12401,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 1010093880}
+      objectReference: {fileID: 0}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
       value: 0.125
@@ -11680,17 +12420,17 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 1010093880}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[2]
       value: 
-      objectReference: {fileID: 1010093883}
+      objectReference: {fileID: 0}
     - target: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: commandList.Array.data[3]
       value: 
-      objectReference: {fileID: 1010093884}
+      objectReference: {fileID: 0}
     - target: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: storyText
@@ -11819,7 +12559,18 @@ Prefab:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1010093878 stripped
@@ -11832,12 +12583,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a,
     type: 2}
   m_PrefabInternal: {fileID: 1010093877}
---- !u!114 &1010093880 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1010093877}
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
 --- !u!114 &1010093881 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -11857,7 +12602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "\u2193 Graveyard: To Mourn the Passed"
+  storyText: 'Cemetery: To Mourn the Passed'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -11870,61 +12615,12 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1010093883
+--- !u!114 &1010093890 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1010093879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 7
-  indentLevel: 0
-  storyText: "\u2191 Hospital: To Heal the Wounds"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1010093884
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1010093879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  indentLevel: 0
-  storyText: "\u2192 ?\u0335\u0334\u035F\u0337\u0335?\u035D\u0322\u0328\u0340?\u0322\u0361\u034F\u0358\u0335
-    \ : To ?\u0361\u0335\u0327\u0489?\u035E\u0358?\u035E\u0338?\u035E\u0336\u0362\u035C\u035E
-    \u0315\u0321\u0362\u0338\u0321t\u0322\u035E\u0337\u0334h\u031Be\u031B\u0338\u031B\u035F
-    \u0340\u0360\u034F\u0337?\u031B\u034F\u0489\u034F?\u0362\u0489?\u031B\u034F\u0334"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114527836329008550, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1010093877}
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
 --- !u!1 &1055582442
 GameObject:
   m_ObjectHideFlags: 0
@@ -16821,7 +17517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 660841881}
+  selectedFlowchart: {fileID: 583374488}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -17002,12 +17698,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a,
     type: 2}
   m_PrefabInternal: {fileID: 56650745}
---- !u!114 &2082583808 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 56650745}
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
 --- !u!114 &2082583809 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -17025,61 +17715,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a,
     type: 2}
   m_PrefabInternal: {fileID: 56650745}
---- !u!114 &2082583818
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2082583805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  indentLevel: 0
-  storyText: "\u2192 ?\u0335\u0334\u035F\u0337\u0335?\u035D\u0322\u0328\u0340?\u0322\u0361\u034F\u0358\u0335
-    \ : To ?\u0361\u0335\u0327\u0489?\u035E\u0358?\u035E\u0338?\u035E\u0336\u0362\u035C\u035E
-    \u0315\u0321\u0362\u0338\u0321t\u0322\u035E\u0337\u0334h\u031Be\u031B\u0338\u031B\u035F
-    \u0340\u0360\u034F\u0337?\u031B\u034F\u0489\u034F?\u0362\u0489?\u031B\u034F\u0334"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &2082583819
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2082583805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 7
-  indentLevel: 0
-  storyText: "\u2191 Hospital: To Heal the Wounds"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &2082583820
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -17093,7 +17728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: "\u2193 Graveyard: To Mourn the Passed"
+  storyText: 'Hospital: To save poor souls'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
