@@ -36,3 +36,6 @@ sysinfo.txt
 *.unitypackage
 Assets/_Assets/Video/Outro.mp4
 Assets/_Assets/Video/Menu1.mp4
+Assets/_Assets/Video/Menu1.mp4.meta
+Assets/_Assets/Video/Outro.mp4.meta
+Assets/Levels/Main Menu.unity
