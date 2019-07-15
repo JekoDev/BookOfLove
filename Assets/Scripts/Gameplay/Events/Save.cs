@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Save : MonoBehaviour {
 
@@ -11,6 +12,8 @@ public class Save : MonoBehaviour {
 	void Start () {
         time = Time.time;
         offset = this.transform.position - Camera.main.transform.position;
+        GameM.level = SceneManager.GetActiveScene().buildIndex;
+        GameM.SaveGame();
     }
 	
 	// Update is called once per frame

@@ -32,6 +32,8 @@ public class MainMenu : MonoBehaviour {
         m_1Button.onClick.AddListener(Newgame);
         m_2Button.onClick.AddListener(Continuegame);
         m_3Button.onClick.AddListener(Quit);
+
+        
     }
 	
 	// Update is called once per frame
@@ -43,13 +45,18 @@ public class MainMenu : MonoBehaviour {
             secondVideo.SetActive(true);
             secondVideo.GetComponent<VideoPlayer>().Play();
             ui.SetActive(true);
+            if (!GameM.IsLoad())
+            {
+                GameObject.Find("Quit").transform.position += new Vector3(0f, 0.70f);
+                GameObject.Find("Continue").SetActive(false);
+            }
         }
 	}
 
 
 
     void Newgame() { SceneManager.LoadScene(1); }
-    void Continuegame() { SceneManager.LoadScene(1); }
+    void Continuegame() { GameM.LoadGame(); }
 
     void Quit() {
         #if UNITY_EDITOR

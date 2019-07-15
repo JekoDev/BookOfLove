@@ -1,6 +1,11 @@
 ﻿//This Code is used for storing information between scenes
 
 using System.Collections.Generic;
+using UnityEngine;
+using System.Collections;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+using UnityEngine.SceneManagement;
 
 public static class GameM
 {
@@ -9,6 +14,9 @@ public static class GameM
     private static Item Selected;
     private static Dictionary<string, string> Save = new Dictionary<string, string>();
     private static bool Skipintro;
+    private static int Level;
+
+    public static SaveLoad saved = new SaveLoad();
 
     public static Dictionary<string, string> save
     {
@@ -29,6 +37,18 @@ public static class GameM
         set
         {
             Skipintro = value;
+        }
+    }
+
+    public static int level
+    {
+        get
+        {
+            return Level;
+        }
+        set
+        {
+            Level = value;
         }
     }
 
@@ -68,4 +88,49 @@ public static class GameM
         }
     }
 
+    public static void LoadGame()
+    {
+        if (File.Exists(Application.persistentDataPath + "/savedGames.gd"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open);
+            saved = (SaveLoad)bf.Deserialize(file);
+
+            Itemlist = saved.Itemlist;
+            Selected = saved.Selected;
+            PlayerX  = saved.PlayerX;
+            Save     = new Dictionary<string, string>(saved.Save);
+            Level    = saved.Level;
+
+            file.Close();
+
+            SceneManager.LoadScene(Level);
+        }
+    }
+
+    public static bool IsLoad()
+    {
+        if (File.Exists(Application.persistentDataPath + "/savedGames.gd"))
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public static void SaveGame()
+    {
+        SaveLoad cache = new SaveLoad();
+        cache.Itemlist = Itemlist;
+        cache.Selected = Selected;
+        cache.PlayerX  = PlayerX;
+        cache.Level    = Level;
+        cache.Save     = new Dictionary<string, string>(Save);
+
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/savedGames.gd");
+        bf.Serialize(file, cache);
+        file.Close();
+    }
 }
