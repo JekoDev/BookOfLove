@@ -10,7 +10,8 @@ public class TriggerDialog : MonoBehaviour {
     public enum triggerType
     {
         DIALOG_CLICKME,
-        DIALOG_AUTOSTART        
+        DIALOG_AUTOSTART,     
+        DIALOG_DELETEME     
     }
 
     public triggerType trigger;
@@ -161,6 +162,11 @@ public class TriggerDialog : MonoBehaviour {
             if (moveToMe == true && mov.blockMove == false)
             {
                 if (LeMeSetAWalkToPoint == false || mov.OwnWalk == false) { 
+                    if (trigger == triggerType.DIALOG_DELETEME)
+                    {
+                        player.GetComponent<SpriteRenderer>().enabled = false;
+                    }
+
                     trigger_Dialog(moveItem);
                     moveToMe = false;
                 }
@@ -178,7 +184,7 @@ public class TriggerDialog : MonoBehaviour {
 
     public void OnTriggerEnter2D (Collider2D collision)
     {
-        if (collision.gameObject.name == "cursor" && trigger == triggerType.DIALOG_CLICKME && mov.BlockDialogue == false && mov.BlockDialogueB == false)
+        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME && trigger == triggerType.DIALOG_DELETEME) && mov.BlockDialogue == false && mov.BlockDialogueB == false)
         {
             triggered = true;
         }
@@ -186,7 +192,7 @@ public class TriggerDialog : MonoBehaviour {
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "cursor" && trigger == triggerType.DIALOG_CLICKME)
+        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME||trigger==triggerType.DIALOG_DELETEME))
         {
             triggered = false;
         }
