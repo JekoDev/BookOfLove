@@ -36,8 +36,10 @@ public class Movement : MonoBehaviour {
     public bool BlockDialogue;
     [HideInInspector]
     public bool BlockDialogueB;
-         
-	void Start () {
+    [HideInInspector]
+    public bool BlockDialogueC;
+
+    void Start () {
         inp     = GameObject.Find("Movement").GetComponent<InputManager>();
         model   = GameObject.Find("Model");
         world   = GameObject.Find("World").GetComponent<WorldManager>();

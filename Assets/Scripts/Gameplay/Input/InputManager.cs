@@ -29,9 +29,13 @@ public class InputManager : MonoBehaviour {
     public bool StickRight;
     public bool StickLeft;
 
+    private quit q;
+
 
 	void Start () {
         Reset();
+        GameObject cache = GameObject.Find("quitgame");
+        if (cache != null) q = cache.GetComponent<quit>();
     }
 	
 	void Update () {
@@ -44,7 +48,21 @@ public class InputManager : MonoBehaviour {
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))     Top   = true;
 
         if (Input.GetKeyDown(KeyCode.Space)  || Input.GetKeyDown(KeyCode.Return)) Action   = true;
-        if (Input.GetKeyDown(KeyCode.Escape))                          Pause    = true;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (q != null)
+            {
+                if (Pause == false)
+                {
+                    q.QuitTrigger = true;
+                    //Pause = true;
+                }else {
+                    q.QuitTrigger = true;
+                    //Pause = false;
+                }
+
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))  PointLeft    = true;
         if (Input.GetKeyDown(KeyCode.Mouse1))  PointRight   = true;

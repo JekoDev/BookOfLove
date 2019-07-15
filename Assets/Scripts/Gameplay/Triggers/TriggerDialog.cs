@@ -132,7 +132,7 @@ public class TriggerDialog : MonoBehaviour {
         }
 
 
-        if (autostart == false)
+        if (autostart == false && mov.BlockDialogueC == false)
         {
 
             if (Time.time - block < 0.5) return;
@@ -184,7 +184,7 @@ public class TriggerDialog : MonoBehaviour {
 
     public void OnTriggerEnter2D (Collider2D collision)
     {
-        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME || trigger == triggerType.DIALOG_DELETEME) && mov.BlockDialogue == false && mov.BlockDialogueB == false)
+        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME || trigger == triggerType.DIALOG_DELETEME) && mov.BlockDialogue == false && mov.BlockDialogueB == false && mov.BlockDialogueC == false)
         {
             triggered = true;
         }
