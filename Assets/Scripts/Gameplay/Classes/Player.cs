@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PostProcessing;
 
 public class Player : MonoBehaviour {
 
@@ -100,17 +101,17 @@ public class Player : MonoBehaviour {
 
     public void SetBloom(float bloom)
     {
-        //ppt.bloomTo = bloom;
+        
     }
 
     public void EnterFlashback()
     {
-        //Placeholder
+        Camera.main.GetComponent<PostProcessingBehaviour>().enabled = true;
     }
 
     public void LeaveFlashback()
     {
-        //Placeholder
+        Camera.main.GetComponent<PostProcessingBehaviour>().enabled = false;
     }
 
     public void StatueThing(int nr)

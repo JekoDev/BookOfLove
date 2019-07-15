@@ -152,7 +152,7 @@ GameObject:
   m_PrefabInternal: {fileID: 1754428624}
 --- !u!114 &75899702
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 75899701}
@@ -179,7 +179,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &75899703
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 75899701}
@@ -1176,7 +1176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 2408cee4f37a0d849856b4c3a718f872, type: 2}
+  profile: {fileID: 11400000, guid: 6ce79b2b2fee15641b866846b219e0cb, type: 2}
 --- !u!1 &461418980
 GameObject:
   m_ObjectHideFlags: 0
@@ -8534,6 +8534,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
         type: 2}
+      propertyPath: selectedBlocks.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
       propertyPath: selectedCommands.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -8573,7 +8578,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1754428626}
+      objectReference: {fileID: 75899723}
     - target: {fileID: 114426967363937264, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
@@ -8650,12 +8655,12 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[4]
       value: 
-      objectReference: {fileID: 1754428635}
+      objectReference: {fileID: 75899703}
     - target: {fileID: 114137589466432852, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
         type: 2}
       propertyPath: commandList.Array.data[5]
       value: 
-      objectReference: {fileID: 75899703}
+      objectReference: {fileID: 1754428635}
     - target: {fileID: 114137589466432852, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
         type: 2}
       propertyPath: commandList.Array.data[6]
@@ -9171,7 +9176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 533533617}
+  selectedFlowchart: {fileID: 1754428627}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
