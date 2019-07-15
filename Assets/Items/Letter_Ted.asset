@@ -16,6 +16,6 @@ MonoBehaviour:
   description: 
   pickedUp: 0
   scaleScene: 1
-  scaleInventory: 0.7
+  scaleInventory: 0.3
   XOffsetInv: 0
   YOffsetInv: 0
