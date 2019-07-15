@@ -1365,12 +1365,12 @@ Prefab:
     - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: HoverOffsetY
-      value: -1.73
+      value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: 114998962056435616, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: HoverOffsetX
-      value: 0.1
+      value: -0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -3249,7 +3249,7 @@ MonoBehaviour:
   CameraBorderRight: 51.57
   HelperGroundLine: -2.72
   DrawCameraHelper: 1
-  CameraHelper: 21.78
+  CameraHelper: 1.14
   CharacterBounds: 1
   CharacterBoundLeft: -5.68
   CharacterBoundRight: 54.7
@@ -4516,12 +4516,6 @@ Prefab:
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &459432148 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 459432147}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &483974515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4765,8 +4759,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.78700006}
-  m_AnchoredPosition: {x: 15.75, y: 10.815002}
-  m_SizeDelta: {x: -86.5, y: -69.630005}
+  m_AnchoredPosition: {x: 15.75, y: 1.1650028}
+  m_SizeDelta: {x: -86.5, y: -88.93001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550912952
 MonoBehaviour:
@@ -4809,7 +4803,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 79197ecfbc3a4294a89ce589dac02cf2, type: 3}
+    m_Font: {fileID: 12800000, guid: dca939a416153cb4b864ce8b3484c9a5, type: 3}
     m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
@@ -15222,7 +15216,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: bb145366ce7024469a5758b08d31802c, type: 3}
+    m_Font: {fileID: 12800000, guid: dca939a416153cb4b864ce8b3484c9a5, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -18618,6 +18612,12 @@ Canvas:
   m_SortingLayerID: -576729265
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1631003824 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 243141511}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &1632922550 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a,
@@ -20453,7 +20453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 459432148}
+  selectedFlowchart: {fileID: 1631003824}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1

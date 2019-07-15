@@ -1390,7 +1390,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 533533621}
   selectedCommands:
-  - {fileID: 533533646}
+  - {fileID: 533533618}
   variables:
   - {fileID: 533533630}
   description: 
@@ -1429,7 +1429,7 @@ MonoBehaviour:
       typeAssemblyname: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       typeFullname: System.Int32
-      intValue: 0
+      intValue: 7
       boolValue: 0
       floatValue: 0
       stringValue: 
@@ -1517,8 +1517,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -1.495697
-    y: -0.5271454
+    x: -1.4957275
+    y: -0.5271301
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5653,7 +5653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2038860782}
+  selectedFlowchart: {fileID: 533533617}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -6214,12 +6214,6 @@ MonoBehaviour:
   StickDown: 0
   StickRight: 0
   StickLeft: 0
---- !u!114 &2038860782 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 898994556}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &2055272116
 GameObject:
   m_ObjectHideFlags: 0
