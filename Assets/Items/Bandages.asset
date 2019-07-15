@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Name: Bandages
   m_EditorClassIdentifier: 
   name: Bandages
-  artwork: {fileID: 21300000, guid: 0c83244b75757064993929ff83fdcf40, type: 3}
+  artwork: {fileID: 21300000, guid: b4c25ef3d909d1e4c8a34455ec719363, type: 3}
   description: 
   pickedUp: 0
+  scaleScene: 1
+  scaleInventory: 0.7
+  XOffsetInv: 0
+  YOffsetInv: 0

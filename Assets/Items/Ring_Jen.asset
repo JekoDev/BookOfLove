@@ -15,3 +15,7 @@ MonoBehaviour:
   artwork: {fileID: 21300000, guid: f53cf27d176f4964d83f9ab4e0ab78d5, type: 3}
   description: A ring that once belonged to Shaun's wife, Jen.
   pickedUp: 0
+  scaleScene: 1
+  scaleInventory: 0.7
+  XOffsetInv: 0
+  YOffsetInv: 0

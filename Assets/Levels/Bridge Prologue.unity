@@ -3092,7 +3092,7 @@ Prefab:
     - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1217341208288368, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_Name
@@ -3102,7 +3102,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: d81ce52235c3a8c4d903fd17cfc810b0,
+      objectReference: {fileID: 21300000, guid: 0f2cfa322bbcdee4695148d53a9122eb,
         type: 3}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -3123,15 +3123,15 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 343390723}
+      objectReference: {fileID: 343390725}
     - target: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 343390700}
+      objectReference: {fileID: 343390711}
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 60456268501259144, guid: 01e49ff2de1d39547950b8a1263a380a,
         type: 2}
@@ -3803,6 +3803,10 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
       value: 1.8778877
       objectReference: {fileID: 0}
+    - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
     - {fileID: 114302892759595548, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -3832,7 +3836,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -0.10865784
-    y: 112.69238
+    y: 111.376595
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3845,6 +3849,7 @@ MonoBehaviour:
   - {fileID: 343390713}
   - {fileID: 343390698}
   - {fileID: 343390712}
+  - {fileID: 343390711}
   - {fileID: 343390699}
   - {fileID: 343390709}
   - {fileID: 343390721}
@@ -3889,6 +3894,12 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &343390696 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 343390691}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!114 &343390697
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4029,7 +4040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
-  storyText: "Just wait a bit longer and we will be together again.\r\nI love you.\r\n"
+  storyText: "Just wait a bit longer and we will be together again.\r"
   description: 
   character: {fileID: 343390708}
   portrait: {fileID: 0}
@@ -4282,6 +4293,50 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &343390711
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 343390693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 95
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 894166596}
+  targetComponentAssemblyName: Player, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: Player
+  targetMethod: StatueThing
+  targetMethodText: 'StatueThing (Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &343390712
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4524,12 +4579,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &343390723 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
-    type: 2}
-  m_PrefabInternal: {fileID: 343390691}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &343390724
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4558,6 +4607,12 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &343390725 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114851842931595870, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 343390691}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!1 &345272555
 GameObject:
   m_ObjectHideFlags: 0
@@ -11858,7 +11913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 894166625}
+  selectedFlowchart: {fileID: 343390696}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
@@ -13609,6 +13664,7 @@ GameObject:
   - component: {fileID: 2116765979}
   - component: {fileID: 2116765977}
   - component: {fileID: 2116765978}
+  - component: {fileID: 2116765986}
   m_Layer: 5
   m_Name: SayDialog
   m_TagString: Untagged
@@ -13877,6 +13933,28 @@ Canvas:
   m_SortingLayerID: -576729265
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!164 &2116765986
+AudioReverbFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116765975}
+  m_Enabled: 0
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: 0
+  m_DecayTime: 2.91
+  m_DecayHFRatio: 1.3
+  m_ReflectionsLevel: -602
+  m_ReverbLevel: -302
+  m_ReverbDelay: 0.022
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0.074
+  m_ReverbPreset: 9
 --- !u!1 &2143718044
 GameObject:
   m_ObjectHideFlags: 0
