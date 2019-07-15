@@ -17,6 +17,9 @@ public class ItemMenu : MonoBehaviour {
     private bool wait;
     private float timer;
 
+    public AudioSource open;
+    public AudioSource close;
+
     // Use this for initialization
     void Start () {
         offset = this.transform.position - Camera.main.transform.position;
@@ -82,6 +85,7 @@ public class ItemMenu : MonoBehaviour {
                 }
                 collapsed = true;
                 itemBanner.GetComponent<Animator>().SetBool("Enable", true);
+                if (open != null) open.Play();
             }
         }
 
@@ -95,6 +99,7 @@ public class ItemMenu : MonoBehaviour {
                 GameObject.Destroy(itemContainer.transform.GetChild(i).gameObject);
             }
             itemBanner.GetComponent<Animator>().SetBool("Enable", false);
+            if (close != null) close.Play();
         }
 
     }
