@@ -11,7 +11,7 @@ public class TriggerDialog : MonoBehaviour {
     {
         DIALOG_CLICKME,
         DIALOG_AUTOSTART,     
-        DIALOG_COLLIDE     
+        DIALOG_DELETEME     
     }
 
     public triggerType trigger;
@@ -137,7 +137,7 @@ public class TriggerDialog : MonoBehaviour {
 
             if (Time.time - block < 0.5) return;
 
-            if (mov.blockMove == false && autostart == false && (inp.PointLeft || inp.Action || inp.PointRight || trigger == triggerType.DIALOG_COLLIDE) && triggered == true && (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 2.0f || LeMeSetAWalkToPoint == true)){
+            if (mov.blockMove == false && autostart == false && (inp.PointLeft || inp.Action || inp.PointRight) && triggered == true && (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 2.0f || LeMeSetAWalkToPoint == true)){
                 mov.blockMove = true;
                 moveToMe = true;
                 moveItem = (inp.PointRight) ? true : false;
@@ -162,6 +162,11 @@ public class TriggerDialog : MonoBehaviour {
             if (moveToMe == true && mov.blockMove == false)
             {
                 if (LeMeSetAWalkToPoint == false || mov.OwnWalk == false) { 
+                    if (trigger == triggerType.DIALOG_DELETEME)
+                    {
+                        player.GetComponent<SpriteRenderer>().enabled = false;
+                    }
+
                     trigger_Dialog(moveItem);
                     moveToMe = false;
                 }
@@ -179,8 +184,7 @@ public class TriggerDialog : MonoBehaviour {
 
     public void OnTriggerEnter2D (Collider2D collision)
     {
-        if (collision.gameObject.name == "Model" && trigger == triggerType.DIALOG_COLLIDE) triggered = true;
-        if (collision.gameObject.name == "cursor" && trigger == triggerType.DIALOG_CLICKME && mov.BlockDialogue == false && mov.BlockDialogueB == false)
+        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME && trigger == triggerType.DIALOG_DELETEME) && mov.BlockDialogue == false && mov.BlockDialogueB == false)
         {
             triggered = true;
         }
@@ -188,7 +192,7 @@ public class TriggerDialog : MonoBehaviour {
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "cursor" && trigger == triggerType.DIALOG_CLICKME)
+        if (collision.gameObject.name == "cursor" && (trigger == triggerType.DIALOG_CLICKME||trigger==triggerType.DIALOG_DELETEME))
         {
             triggered = false;
         }
