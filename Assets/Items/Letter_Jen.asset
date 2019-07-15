@@ -15,3 +15,7 @@ MonoBehaviour:
   artwork: {fileID: 21300000, guid: 0ff36a10155559f49bf190c939356c04, type: 3}
   description: An unopened letter left behind by Jen for her husband.
   pickedUp: 0
+  scaleScene: 1
+  scaleInventory: 0.7
+  XOffsetInv: 0
+  YOffsetInv: 0

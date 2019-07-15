@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Name: Time_Capsule
   m_EditorClassIdentifier: 
   name: Time_Capsule
-  artwork: {fileID: 21300000, guid: 3894560836a9b8f4f8c1f1045959a4ef, type: 3}
+  artwork: {fileID: 21300000, guid: 4b24a9458e0cea6458d77810277011fe, type: 3}
   description: 
   pickedUp: 0
+  scaleScene: 1
+  scaleInventory: 0.7
+  XOffsetInv: 0
+  YOffsetInv: 0

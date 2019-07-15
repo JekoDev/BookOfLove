@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Name: Photo_Jen
   m_EditorClassIdentifier: 
   name: Photo_Jen
-  artwork: {fileID: 21300000, guid: e5da8b7ca8869534d90664c6f1b3560d, type: 3}
+  artwork: {fileID: 21300000, guid: 7e67baa3507ae9e41ac6ce8a7f460894, type: 3}
   description: 
   pickedUp: 0
   scaleScene: 0.2
-  scaleInventory: 0.24
+  scaleInventory: 0.7
   XOffsetInv: 0
   YOffsetInv: 0
