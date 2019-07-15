@@ -137,7 +137,7 @@ public class TriggerDialog : MonoBehaviour {
 
             if (Time.time - block < 0.5) return;
 
-            if (mov.blockMove == false && autostart == false && (inp.PointLeft || inp.Action || inp.PointRight) && triggered == true && (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 2.0f || LeMeSetAWalkToPoint == true)){
+            if (mov.blockMove == false && autostart == false && (inp.PointLeft || inp.Action || inp.PointRight || trigger == triggerType.DIALOG_COLLIDE) && triggered == true && (Vector3.Distance(player.transform.position, this.gameObject.transform.position) > 2.0f || LeMeSetAWalkToPoint == true)){
                 mov.blockMove = true;
                 moveToMe = true;
                 moveItem = (inp.PointRight) ? true : false;
