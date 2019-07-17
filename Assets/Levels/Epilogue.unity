@@ -113,6 +113,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &8786752 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114770014785128978, guid: 01e49ff2de1d39547950b8a1263a380a,
+    type: 2}
+  m_PrefabInternal: {fileID: 898994556}
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &35210098
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,10 +650,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraBorderLeft: 0
-  CameraBorderRight: 39
+  CameraBorderRight: 18.9
   HelperGroundLine: -3.76
   DrawCameraHelper: 1
-  CameraHelper: 25
+  CameraHelper: 4.99
   CharacterBounds: 0
   CharacterBoundLeft: 0
   CharacterBoundRight: 0
@@ -1076,6 +1082,11 @@ Prefab:
       propertyPath: nodeRect.x
       value: 263.5625
       objectReference: {fileID: 0}
+    - target: {fileID: 212435139501780802, guid: 513f71c496ec1864f9004dc7c5b0b0c4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114427066194570962, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
     - {fileID: 114758029263599532, guid: 513f71c496ec1864f9004dc7c5b0b0c4, type: 2}
@@ -1259,7 +1270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1892457383
   m_SortingLayer: 3
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 6197a230214b8384d8c13ac535fc633d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2354,7 +2365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3abc5d9d61b719e47bcf5e08a18c1780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BorderRight: 25.7
+  BorderRight: 19.1
   verticalAdjust: 0
   LowerButScrollIndeed: 0
 --- !u!1 &602257905
@@ -3054,6 +3065,11 @@ Prefab:
     - target: {fileID: 4313542637066328, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212670700513837752, guid: 01e49ff2de1d39547950b8a1263a380a,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114823314609493822, guid: 01e49ff2de1d39547950b8a1263a380a, type: 2}
@@ -5653,7 +5669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 533533617}
+  selectedFlowchart: {fileID: 8786752}
 --- !u!4 &1879956561
 Transform:
   m_ObjectHideFlags: 1
